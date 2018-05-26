@@ -20,7 +20,7 @@ module.exports = function getTypes(commitlint = {}) {
 		choices: types.map(type => ({
 			value: type,
 			short: type,
-			name: `${type.padEnd(maxLength)}: ${commitTypes[type].summary}`,
+			name: `${type.padEnd(maxLength)} ${commitTypes[type].summary}`,
 		})),
 	};
 };
