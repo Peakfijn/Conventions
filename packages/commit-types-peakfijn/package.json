@@ -1,0 +1,27 @@
+{
+	"name": "commit-types-peakfijn",
+	"version": "0.0.0",
+	"description": "All commit types used by Peakfijn conventions",
+	"keywords": [
+		"commit",
+		"types",
+		"peakfijn"
+	],
+	"author": "Cedric van Putten <cedric@peakfijn.nl>",
+	"license": "MIT",
+	"main": "index.json",
+	"homepage": "https://github.com/peakfijn/conventions#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peakfijn/conventions.git"
+	},
+	"bugs": {
+		"url": "https://github.com/peakfijn/conventions/issues"
+	},
+	"scripts": {
+		"test": "json -f index.json"
+	},
+	"devDependencies": {
+		"json": "^9.0.6"
+	}
+}

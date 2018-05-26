@@ -1,0 +1,56 @@
+{
+	"feature": {
+		"release": "minor",
+		"name": "New features",
+		"summary": "TODO: feature summary",
+		"description": "TODO: feature description"
+	},
+	"fix": {
+		"release": "patch",
+		"name": "Bug fixes",
+		"summary": "TODO: fix summary",
+		"description": "TODO: fix description"
+	},
+	"test": {
+		"release": "patch",
+		"name": "Testing updates",
+		"summary": "TODO: test summary",
+		"description": "TODO: test description"
+	},
+	"performance": {
+		"release": "patch",
+		"name": "Performance improvements",
+		"summary": "TODO: performance summary",
+		"description": "TODO: performance description"
+	},
+	"documentation": {
+		"release": "patch",
+		"name": "Documentation changes",
+		"summary": "TODO: documentation summary",
+		"description": "TODO: documentation description"
+	},
+	"pipeline": {
+		"release": null,
+		"name": "Pipeline changes",
+		"summary": "TODO: pipeline summary",
+		"description": "TODO: pipeline description"
+	},
+	"style": {
+		"release": null,
+		"name": "Code style changes",
+		"summary": "TODO: style summary",
+		"description": "TODO: style description"
+	},
+	"refactor": {
+		"release": "patch",
+		"name": "Code refactors",
+		"summary": "TODO: refactor summary",
+		"description": "TODO: refactor description"
+	},
+	"chore": {
+		"release": "patch",
+		"name": "Other chores",
+		"summary": "TODO: chore summary",
+		"description": "TODO: chore description"
+	}
+}
