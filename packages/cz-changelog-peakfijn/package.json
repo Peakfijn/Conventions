@@ -1,6 +1,6 @@
 {
 	"name": "cz-changelog-peakfijn",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "A commitizen cz-cli adapter for Peakfijn conventions",
 	"keywords": [
 		"commitizen",
@@ -23,7 +23,7 @@
 	},
 	"dependencies": {
 		"@commitlint/load": "^6.1.3",
-		"commit-types-peakfijn": "0.0.0",
-		"commitlint-config-peakfijn": "0.0.0"
+		"commit-types-peakfijn": "^0.1.0",
+		"commitlint-config-peakfijn": "^0.1.0"
 	}
 }
