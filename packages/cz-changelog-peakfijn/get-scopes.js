@@ -11,7 +11,7 @@ module.exports = function getScopes(commitlint = {}) {
 	const maxLength = scopes.reduce((carry, scope) => scope.length > carry ? scope.length : carry, 0);
 
 	return {
-		enabled: scopes.length > 0,
+		enabled: scopes.length > 1,
 		maxLength: maxLength,
 		choices: scopes.map(scope => ({
 			value: scope,
