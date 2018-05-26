@@ -16,7 +16,7 @@ module.exports = {
 				type: 'list',
 				name: 'type',
 				message: 'What is the most appropiate change type? (in priority)\n',
-				choices: typeInfo.types,
+				choices: typeInfo.choices,
 				when: typeInfo.enabled,
 			},
 			{
