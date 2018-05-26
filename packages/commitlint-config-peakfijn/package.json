@@ -1,0 +1,27 @@
+{
+	"name": "commitlint-config-peakfijn",
+	"version": "0.0.0",
+	"description": "A commitlint configuration for Peakfijn conventions",
+	"keywords": [
+		"commitlint",
+		"peakfijn"
+	],
+	"author": "Cedric van Putten <cedric@peakfijn.nl>",
+	"license": "MIT",
+	"main": "index.js",
+	"homepage": "https://github.com/peakfijn/peakfijn-conventions#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peakfijn/peakfijn-conventions.git"
+	},
+	"bugs": {
+		"url": "https://github.com/peakfijn/peakfijn-conventions/issues"
+	},
+	"scripts": {
+		"test": "node -c index.js"
+	},
+	"dependencies": {
+		"@commitlint/config-conventional": "^6.1.3",
+		"commit-types-peakfijn": "0.0.0"
+	}
+}

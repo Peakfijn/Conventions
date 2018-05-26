@@ -13,3 +13,4 @@ install:
 script:
   - npx lerna bootstrap
   - npx lerna run test
+  - npx commitlint-travis

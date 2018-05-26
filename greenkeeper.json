@@ -4,9 +4,7 @@
 			"packages": [
 				"package.json",
 				"packages/commit-types-peakfijn/package.json",
-				"packages/commitlint-config-peakfijn/package.json",
-				"packages/conventional-changelog-peakfijn/package.json",
-				"packages/cz-peakfijn-changelog/package.json"
+				"packages/commitlint-config-peakfijn/package.json"
 			]
 		}
 	}

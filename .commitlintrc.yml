@@ -1,0 +1,11 @@
+---
+extends:
+  - './packages/commitlint-config-peakfijn'
+rules:
+  scope-empty: [0, never]
+  scope-enum:
+    - 2
+    - always
+    -
+      - commit-types
+      - commitlint
