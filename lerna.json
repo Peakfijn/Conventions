@@ -6,8 +6,9 @@
 	"version": "0.2.0",
 	"command": {
 		"publish": {
-			"message": "chore: publish new release %s",
-			"allowBranch": "master"
+			"allowBranch": "master",
+			"exact": true,
+			"message": "chore: publish new release %s"
 		}
 	}
 }
