@@ -44,10 +44,10 @@ module.exports = {
 		];
 
 		cz.prompt(questions).then(function (answers) {
-			const scope = answer.scope ? `(${answer.scope})` : '';
-			const head = `${answer.type}${scope}: ${answer.subject.toLowerCase()}`;
+			const scope = answers.scope ? `(${answers.scope})` : '';
+			const head = `${answers.type}${scope}: ${answers.subject.toLowerCase()}`;
 
-			commit(`${head}\n\n${answer.body}\n\n${answer.footer}`.trim());
+			commit(`${head}\n\n${answers.body}\n\n${answers.footer}`.trim());
 		});
 	},
 };
