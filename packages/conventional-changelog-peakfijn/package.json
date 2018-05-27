@@ -1,6 +1,6 @@
 {
 	"name": "conventional-changelog-peakfijn",
-	"version": "0.2.0",
+	"version": "0.2.4",
 	"description": "A conventional changelog preset for Peakfijn conventions",
 	"keywords": [
 		"conventional",
