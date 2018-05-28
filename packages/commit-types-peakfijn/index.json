@@ -2,55 +2,55 @@
 	"feature": {
 		"release": "minor",
 		"name": "New features",
-		"summary": "TODO: feature summary",
+		"summary": "Creating a feature in business logic",
 		"description": "TODO: feature description"
 	},
 	"fix": {
 		"release": "patch",
 		"name": "Bug fixes",
-		"summary": "TODO: fix summary",
+		"summary": "Fixing an issue in business logic",
 		"description": "TODO: fix description"
 	},
 	"test": {
 		"release": "patch",
 		"name": "Testing updates",
-		"summary": "TODO: test summary",
+		"summary": "Modifying a test in business logic",
 		"description": "TODO: test description"
 	},
 	"performance": {
 		"release": "patch",
 		"name": "Performance improvements",
-		"summary": "TODO: performance summary",
+		"summary": "Improving the performance of business logic",
 		"description": "TODO: performance description"
 	},
 	"documentation": {
 		"release": "patch",
 		"name": "Documentation changes",
-		"summary": "TODO: documentation summary",
+		"summary": "Adding new or modifying existing documentation anywhere",
 		"description": "TODO: documentation description"
 	},
 	"pipeline": {
 		"release": null,
 		"name": "Pipeline changes",
-		"summary": "TODO: pipeline summary",
+		"summary": "Changing behavior within the automated environment",
 		"description": "TODO: pipeline description"
 	},
 	"style": {
 		"release": null,
 		"name": "Code style changes",
-		"summary": "TODO: style summary",
+		"summary": "Updating code without changing the meaning of it",
 		"description": "TODO: style description"
 	},
 	"refactor": {
 		"release": "patch",
 		"name": "Code refactors",
-		"summary": "TODO: refactor summary",
+		"summary": "Updating code and changing the meaning of it",
 		"description": "TODO: refactor description"
 	},
 	"chore": {
 		"release": "patch",
 		"name": "Other chores",
-		"summary": "TODO: chore summary",
+		"summary": "Anything that does not belong to a previous type",
 		"description": "TODO: chore description"
 	}
 }
