@@ -1,6 +1,6 @@
-# Commit Conventions - Peakfijn
+# Development Conventions - Peakfijn
 
-A set of packages and configuration for Peakfijn commit conventions.
+A set of packages and configuration for Peakfijn development conventions.
 
 ## License
 
