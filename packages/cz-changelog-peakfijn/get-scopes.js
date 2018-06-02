@@ -1,6 +1,6 @@
 'use strict';
 
-const { getRule, isEnabled } = require('./commitlint-utils');
+const { getRule, ruleIsEnabled } = require('./commitlint-utils');
 
 module.exports = function getScopes(commitlint = {}) {
 	const scopeEmptyRule = getRule(commitlint, 'scope-empty');
@@ -16,7 +16,7 @@ module.exports = function getScopes(commitlint = {}) {
 	const maxLength = scopes.reduce((carry, scope) => scope.length > carry ? scope.length : carry, 0);
 
 	return {
-		enabled: !isEnabled(scopeEmptyRule) && maxLength > 0,
+		enabled: !ruleIsEnabled(scopeEmptyRule) && maxLength > 0,
 		maxLength: maxLength,
 		choices: scopes.map(scope => ({
 			value: scope,

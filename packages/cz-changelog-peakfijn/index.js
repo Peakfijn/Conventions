@@ -2,7 +2,9 @@
 
 const commitTypes = require('commit-types-peakfijn');
 const commitlintLoad = require('@commitlint/load');
+const commitlintLint = require('@commitlint/lint');
 
+const { reportSummary, reportIsValid } = require('./commitlint-utils');
 const getScopes = require('./get-scopes');
 const getTypes = require('./get-types');
 
@@ -40,15 +42,24 @@ module.exports = {
 				{
 					type: 'input',
 					name: 'footer',
-					message: 'Provide any trello card or stackoverflow links: (press enter to skip)\n',
+					message: 'Provide any trello card or stackoverflow links, separated by a space: (press enter to skip)\n',
 				},
 			];
 
 			cz.prompt(questions).then(function (answers) {
 				const scope = answers.scope ? `(${answers.scope})` : '';
-				const head = `${answers.type}${scope}: ${answers.subject.toLowerCase()}`;
+				const head = `${answers.type}${scope}: ${answers.subject}`;
+				const footer = (answers.footer || '').split(' ').join('\n');
 
-				commit(`${head}\n\n${answers.body}\n\n${answers.footer}`.trim());
+				const commitMessage = `${head}\n\n${answers.body}\n\n${footer}`.trim();
+
+				commitlintLint(commitMessage, commitlintConfig.rules).then(function (report) {
+					if (reportIsValid(report)) {
+						commit(commitMessage);
+					} else {
+						console.log(reportSummary(report));
+					}
+				});
 			});
 		});
 	},
