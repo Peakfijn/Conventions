@@ -22,6 +22,7 @@
 		"test": "node -c index.js"
 	},
 	"dependencies": {
+		"@commitlint/load": "^7.0.0",
 		"commit-types-peakfijn": "0.3.0",
 		"commitlint-config-peakfijn": "0.3.0"
 	}
