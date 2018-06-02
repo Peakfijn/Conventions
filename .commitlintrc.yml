@@ -1,6 +1,6 @@
 ---
 extends:
-  - './packages/commitlint-config-peakfijn'
+  - ./packages/commitlint-config-peakfijn
 rules:
   scope-empty: [0, never]
   scope-enum:
