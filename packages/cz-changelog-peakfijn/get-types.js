@@ -8,7 +8,7 @@ module.exports = function getTypes(commitlint = {}) {
 
 	if (typesAllowed && typesAllowed.length) {
 		types = types.filter(function (type) {
-			return typesAllowed.indexOf(type) > 0
+			return typesAllowed.indexOf(type) >= 0;
 		});
 	}
 
