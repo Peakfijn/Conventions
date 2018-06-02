@@ -5,7 +5,7 @@ module.exports = function getScopes(commitlint = {}) {
 	let scopes = [''];
 
 	if (scopesAllowed && scopesAllowed.length) {
-		scope = scopes.concat(scopesAllowed);
+		scopes = scopes.concat(scopesAllowed);
 	}
 
 	const maxLength = scopes.reduce((carry, scope) => scope.length > carry ? scope.length : carry, 0);
