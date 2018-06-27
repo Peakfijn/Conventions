@@ -1,6 +1,6 @@
 {
 	"name": "conventional-changelog-peakfijn",
-	"version": "0.4.1",
+	"version": "0.4.2",
 	"description": "A conventional changelog preset for Peakfijn conventions",
 	"keywords": [
 		"conventional",
@@ -22,7 +22,7 @@
 		"test": "node -c index.js"
 	},
 	"dependencies": {
-		"commit-types-peakfijn": "0.4.1",
+		"commit-types-peakfijn": "0.4.2",
 		"conventional-changelog-angular": "^5.0.0",
 		"q": "^1.5.1"
 	}
