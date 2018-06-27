@@ -22,7 +22,7 @@
 		"test": "node -c index.js"
 	},
 	"dependencies": {
-		"commit-types-peakfijn": "0.4.0",
+		"commit-types-peakfijn": "0.4.1",
 		"conventional-changelog-angular": "^3.0.7",
 		"q": "^1.5.1"
 	}
