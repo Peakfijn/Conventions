@@ -10,6 +10,7 @@ module.exports = Q.all([angularPreset])
 
 		writer.transform = function (commit, context) {
 			const typeInfo = commitTypes[commit.type];
+			const issues = [];
 
 			if (typeInfo && typeInfo.name) {
 				commit.type = typeInfo.name;
