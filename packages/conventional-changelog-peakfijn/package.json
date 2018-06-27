@@ -23,7 +23,7 @@
 	},
 	"dependencies": {
 		"commit-types-peakfijn": "0.4.1",
-		"conventional-changelog-angular": "^3.0.7",
+		"conventional-changelog-angular": "^5.0.0",
 		"q": "^1.5.1"
 	}
 }
