@@ -1,4 +1,8 @@
 {
+	"scripts": {
+		"release": "lerna publish --exact --force-publish=*",
+		"publish": "lerna exec --bail=false -- npm publish"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^7.0.0",
 		"@commitlint/travis-cli": "^7.0.0",
