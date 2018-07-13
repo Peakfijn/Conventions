@@ -47,6 +47,12 @@
 		"summary": "Updating code and changing the meaning of it",
 		"description": "TODO: refactor description"
 	},
+	"release": {
+		"release": null,
+		"name": "Releases",
+		"summary": "Modifying all files required to define a new release version",
+		"description": "TODO: release description"
+	},
 	"chore": {
 		"release": "patch",
 		"name": "Other chores",
