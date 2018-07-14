@@ -1,7 +1,8 @@
 {
 	"scripts": {
 		"release": "lerna publish --exact --force-publish=*",
-		"publish": "lerna exec --bail=false -- npm publish"
+		"publish": "lerna exec --bail=false -- npm publish",
+		"test": "lerna run test"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^7.0.0",

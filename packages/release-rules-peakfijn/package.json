@@ -1,6 +1,6 @@
 {
 	"name": "release-rules-peakfijn",
-	"version": "0.4.2",
+	"version": "0.4.3",
 	"description": "The semantic release rules used by Peakfijn conventions",
 	"keywords": [
 		"semantic",
@@ -23,6 +23,6 @@
 		"test": "node -c index.js"
 	},
 	"devDependencies": {
-		"commit-types-peakfijn": "0.4.2"
+		"commit-types-peakfijn": "0.4.3"
 	}
 }
