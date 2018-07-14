@@ -1,0 +1,28 @@
+{
+	"name": "release-rules-peakfijn",
+	"version": "0.4.2",
+	"description": "The semantic release rules used by Peakfijn conventions",
+	"keywords": [
+		"semantic",
+		"release",
+		"rules",
+		"peakfijn"
+	],
+	"author": "Cedric van Putten <cedric@peakfijn.nl>",
+	"license": "MIT",
+	"main": "index.js",
+	"homepage": "https://github.com/peakfijn/conventions#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peakfijn/conventions.git"
+	},
+	"bugs": {
+		"url": "https://github.com/peakfijn/conventions/issues"
+	},
+	"scripts": {
+		"test": "node -c index.js"
+	},
+	"devDependencies": {
+		"commit-types-peakfijn": "0.4.2"
+	}
+}

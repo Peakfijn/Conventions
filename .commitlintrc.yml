@@ -11,3 +11,4 @@ rules:
       - commit-types
       - commitizen
       - commitlint
+      - release-rules
