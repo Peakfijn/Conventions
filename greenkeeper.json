@@ -2,6 +2,7 @@
 	"groups": {
 		"default": {
 			"packages": [
+				"@peakfijn/config-release-expo/package.json",
 				"package.json",
 				"packages/commit-types-peakfijn/package.json",
 				"packages/commitlint-config-peakfijn/package.json",
