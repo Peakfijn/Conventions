@@ -6,7 +6,8 @@
 				"packages/commit-types-peakfijn/package.json",
 				"packages/commitlint-config-peakfijn/package.json",
 				"packages/conventional-changelog-peakfijn/package.json",
-				"packages/cz-changelog-peakfijn/package.json"
+				"packages/cz-changelog-peakfijn/package.json",
+				"packages/release-rules-peakfijn/package.json"
 			]
 		}
 	}
