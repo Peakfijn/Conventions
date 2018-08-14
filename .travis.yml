@@ -11,6 +11,6 @@ before_install:
 install:
   - npm install
 script:
-  - npx lerna bootstrap
+  - npx lerna bootstrap --no-ci
   - npx lerna run test
   - npx commitlint-travis
