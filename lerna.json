@@ -10,7 +10,7 @@
 			"allowBranch": "master",
 			"exact": true,
 			"force-publish": "*",
-			"message": "chore: publish new release %s"
+			"message": "release: create new version %s"
 		}
 	}
 }

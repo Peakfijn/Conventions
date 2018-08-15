@@ -9,7 +9,7 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
-	"homepage": "https://github.com/peakfijn/peakfijn-conventions#readme",
+	"homepage": "https://github.com/peakfijn/peakfijn-conventions/tree/develop/packages/commitlint-config-peakfijn#readme",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/peakfijn/peakfijn-conventions.git"

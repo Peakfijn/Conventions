@@ -11,7 +11,7 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
-	"homepage": "https://github.com/peakfijn/conventions#readme",
+	"homepage": "https://github.com/peakfijn/conventions/tree/develop/packages/release-rules-peakfijn#readme",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/peakfijn/conventions.git"

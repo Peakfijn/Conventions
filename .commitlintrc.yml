@@ -11,5 +11,6 @@ rules:
       - commit-types
       - commitizen
       - commitlint
+      - config-release-expo
       - config-release-laravel
       - release-rules
