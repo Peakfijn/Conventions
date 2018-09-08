@@ -2,7 +2,7 @@
 	"groups": {
 		"default": {
 			"packages": [
-        "@peakfijn/config-release-expo/package.json",
+				"@peakfijn/config-release-expo/package.json",
 				"@peakfijn/config-release-laravel/package.json",
 				"package.json",
 				"packages/commit-types-peakfijn/package.json",
