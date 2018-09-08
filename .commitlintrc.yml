@@ -13,4 +13,5 @@ rules:
       - commitlint
       - config-release-expo
       - config-release-laravel
+      - config-release-react
       - release-rules
