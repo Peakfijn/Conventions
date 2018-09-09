@@ -1,9 +1,8 @@
 # Laravel - Peakfijn Releases
 
-A sharable Semantic Releases configuration for Laravel projects.
-All required dependencies are contained in this one, so you only have to list this.
+A sharable [Semantic Release](https://github.com/semantic-release/semantic-release) configuration for [Laravel](https://github.com/laravel/laravel) projects.
 
-## Install
+## Installation
 
 Install the dependency with npm.
 
@@ -11,7 +10,7 @@ Install the dependency with npm.
 $ npm install --save-dev @peakfijn/config-release-laravel
 ```
 
-## Usage
+## Configuration
 
 Update the `package.json` to include a [release](https://github.com/semantic-release/semantic-release/blob/caribou/docs/usage/configuration.md#configuration) property.
 
@@ -34,4 +33,12 @@ And make sure `package.json` also contains the basic repository (**git url**) in
 		"url": "git@bitbucket.org:peakfijn/<project>.git"
 	}
 }
+```
+
+## Usage
+
+After installing and configuring the package, you can use it by running this command.
+
+```bash
+$ npx semantic-release'
 ```
