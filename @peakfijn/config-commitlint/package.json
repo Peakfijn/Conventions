@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-commitlint",
-	"version": "0.6.1",
+	"version": "0.7.0",
 	"description": "Sharable configuration for Commitlint with Peakfijn conventions",
 	"keywords": [
 		"commitlint",
@@ -23,6 +23,6 @@
 	},
 	"dependencies": {
 		"commitlint": "^7.1.2",
-		"commitlint-config-peakfijn": "0.6.1"
+		"commitlint-config-peakfijn": "0.7.0"
 	}
 }

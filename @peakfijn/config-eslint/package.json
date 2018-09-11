@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-eslint",
-	"version": "0.6.1",
+	"version": "0.7.0",
 	"description": "Sharable configuration for ESLint with Peakfijn conventions",
 	"keywords": [
 		"eslint",
@@ -23,7 +23,7 @@
 	},
 	"dependencies": {
 		"eslint": "^5.5.0",
-		"eslint-config-peakfijn": "0.6.1",
+		"eslint-config-peakfijn": "0.7.0",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jsdoc": "^3.8.0",
 		"eslint-plugin-jsx-a11y": "^6.1.1",
