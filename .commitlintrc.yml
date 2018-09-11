@@ -13,9 +13,13 @@ rules:
       - commitlint
       - config-commitizen
       - config-commitlint
+      - config-eslint
+      - config-eslint-expo
       - config-release-expo
       - config-release-laravel
       - config-release-react
       - config-stylelint
+      - eslint
+      - eslint-expo
       - release-rules
       - stylelint
