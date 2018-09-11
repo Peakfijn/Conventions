@@ -7,12 +7,14 @@
 				"@peakfijn/config-release-expo/package.json",
 				"@peakfijn/config-release-laravel/package.json",
 				"@peakfijn/config-release-react/package.json",
+				"@peakfijn/config-stylelint/package.json",
 				"package.json",
 				"packages/commit-types-peakfijn/package.json",
 				"packages/commitlint-config-peakfijn/package.json",
 				"packages/conventional-changelog-peakfijn/package.json",
 				"packages/cz-changelog-peakfijn/package.json",
-				"packages/release-rules-peakfijn/package.json"
+				"packages/release-rules-peakfijn/package.json",
+				"packages/stylelint-config-peakfijn/package.json"
 			]
 		}
 	}
