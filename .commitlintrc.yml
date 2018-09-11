@@ -18,6 +18,8 @@ rules:
       - config-release-expo
       - config-release-laravel
       - config-release-react
+      - config-stylelint
       - eslint
       - eslint-expo
       - release-rules
+      - stylelint
