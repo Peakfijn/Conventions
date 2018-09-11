@@ -16,4 +16,5 @@ rules:
       - config-release-expo
       - config-release-laravel
       - config-release-react
+      - eslint
       - release-rules
