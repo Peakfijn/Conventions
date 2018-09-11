@@ -1,13 +1,13 @@
-# Laravel - Peakfijn Releases
+# React - Peakfijn Releases
 
-A sharable [Semantic Release](https://github.com/semantic-release/semantic-release) configuration for [Laravel](https://github.com/laravel/laravel) projects.
+A sharable [Semantic Releases](https://github.com/semantic-release/semantic-release) configuration for [plain React](https://github.com/facebook/create-react-app) projects.
 
 ## Installation
 
 Install the dependency with npm.
 
 ```bash
-$ npm install --save-dev @peakfijn/config-release-laravel
+$ npm install --save-dev @peakfijn/config-release-react
 ```
 
 ## Configuration
@@ -17,7 +17,7 @@ Update the `package.json` to include a [release](https://github.com/semantic-rel
 ```json
 {
 	"release": {
-		"extends": "@peakfijn/config-release-laravel"
+		"extends": "@peakfijn/config-release-react"
 	}
 }
 ```
@@ -40,5 +40,5 @@ And make sure `package.json` also contains the basic repository (**git url**) in
 After installing and configuring the package, you can use it by running this command.
 
 ```bash
-$ npx semantic-release'
+$ npx semantic-release
 ```
