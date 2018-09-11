@@ -4,6 +4,7 @@
 			"packages": [
 				"@peakfijn/config-commitizen/package.json",
 				"@peakfijn/config-commitlint/package.json",
+				"@peakfijn/config-eslint-expo/package.json",
 				"@peakfijn/config-eslint/package.json",
 				"@peakfijn/config-release-expo/package.json",
 				"@peakfijn/config-release-laravel/package.json",
