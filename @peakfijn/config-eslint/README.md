@@ -17,7 +17,7 @@ Update the `package.json` to include an [eslintConfig](https://eslint.org/docs/u
 ```json
 {
 	"eslintConfig": {
-		"extends": "peakfijn"
+		"extends": "eslint-config-peakfijn"
 	}
 }
 ```
