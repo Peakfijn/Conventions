@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-stylelint",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "Sharable configuration for Stylelint with Peakfijn conventions",
 	"keywords": [
 		"stylelint",
@@ -23,6 +23,6 @@
 	},
 	"dependencies": {
 		"stylelint": "^9.5.0",
-		"stylelint-config-peakfijn": "0.7.0"
+		"stylelint-config-peakfijn": "0.8.0"
 	}
 }

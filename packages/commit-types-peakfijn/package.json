@@ -1,6 +1,6 @@
 {
 	"name": "commit-types-peakfijn",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "All commit types used by Peakfijn conventions",
 	"keywords": [
 		"commit",
