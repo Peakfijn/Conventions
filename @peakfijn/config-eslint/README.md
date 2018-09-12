@@ -2,8 +2,6 @@
 
 A sharable [ESLint](https://github.com/eslint/eslint) configuration with Peakfijn conventions.
 
-> This configuration serves as a base for all project-specific ESLint configs, like [`@peakfijn/config-eslint-expo`](https://github.com/Peakfijn/Conventions/tree/develop/%40peakfijn/config-eslint-expo).
-
 ## Installation
 
 Install the dependency with npm.
