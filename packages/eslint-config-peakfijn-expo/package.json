@@ -22,9 +22,6 @@
 	"scripts": {
 		"test": "node -c index.js"
 	},
-	"dependencies": {
-		"eslint-config-peakfijn": "0.7.0"
-	},
 	"peerDependencies": {
 		"babel-eslint": "^9.0.0",
 		"eslint-import-resolver-babel-module": "^4.0.0",
