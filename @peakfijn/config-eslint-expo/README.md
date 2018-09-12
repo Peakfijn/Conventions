@@ -20,8 +20,8 @@ Update the `package.json` to include an [eslintConfig](https://eslint.org/docs/u
 {
 	"eslintConfig": {
 		"extends": [
-			"peakfijn",
-			"peakfijn-expo"
+			"eslint-config-peakfijn",
+			"eslint-config-peakfijn-expo"
 		]
 	}
 }
