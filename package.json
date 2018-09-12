@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"release": "lerna publish --exact --force-publish=*",
+		"release": "lerna publish --exact",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
 		"test": "lerna run test"
 	},
