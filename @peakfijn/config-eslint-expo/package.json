@@ -25,6 +25,7 @@
 	"dependencies": {
 		"babel-eslint": "^9.0.0",
 		"eslint": "^5.5.0",
+		"eslint-config-peakfijn": "0.7.0",
 		"eslint-config-peakfijn-expo": "0.7.0",
 		"eslint-import-resolver-babel-module": "^4.0.0",
 		"eslint-plugin-import": "^2.14.0",

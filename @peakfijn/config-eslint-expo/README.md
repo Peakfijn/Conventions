@@ -2,6 +2,8 @@
 
 A sharable [ESLint](https://github.com/eslint/eslint) configuration with Peakfijn conventions, for [Expo](https://github.com/expo/expo-cli) projects.
 
+> This does not extend the base configuration for ESLint. However, it does include it in the dependencies.
+
 ## Installation
 
 Install the dependency with npm.
@@ -17,7 +19,10 @@ Update the `package.json` to include an [eslintConfig](https://eslint.org/docs/u
 ```json
 {
 	"eslintConfig": {
-		"extends": "peakfijn-expo"
+		"extends": [
+			"peakfijn",
+			"peakfijn-expo"
+		]
 	}
 }
 ```
