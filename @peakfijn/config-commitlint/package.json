@@ -10,6 +10,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"commitlint": "./bin/commitlint"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-commitlint#readme",
 	"repository": {
 		"type": "git",
@@ -19,10 +22,11 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "node -c index.js && node -c bin/commitlint"
 	},
 	"dependencies": {
 		"commitlint": "^7.1.2",
-		"commitlint-config-peakfijn": "0.8.0"
+		"commitlint-config-peakfijn": "0.8.0",
+		"resolve-pkg": "^1.0.0"
 	}
 }
