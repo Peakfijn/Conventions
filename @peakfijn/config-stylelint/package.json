@@ -10,6 +10,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"stylelint": "./bin/stylelint"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-stylelint#readme",
 	"repository": {
 		"type": "git",
@@ -19,9 +22,10 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "node -c index.js && node -c bin/stylelint"
 	},
 	"dependencies": {
+		"resolve-pkg": "^1.0.0",
 		"stylelint": "^9.5.0",
 		"stylelint-config-peakfijn": "0.8.0"
 	}
