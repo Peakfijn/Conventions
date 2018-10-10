@@ -12,6 +12,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"semantic-release": "./bin/semantic-release"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-release-react#readme",
 	"repository": {
 		"type": "git",
@@ -21,7 +24,7 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "node -c index.js && node -c bin/semantic-release"
 	},
 	"dependencies": {
 		"@semantic-release/changelog": "^3.0.0",
@@ -30,6 +33,7 @@
 		"@semantic-release/release-notes-generator": "^7.0.0",
 		"conventional-changelog-peakfijn": "0.8.0",
 		"release-rules-peakfijn": "0.8.0",
+		"resolve-pkg": "^1.0.0",
 		"semantic-release": "^15.9.5",
 		"semantic-release-git-branches": "^1.2.1"
 	}
