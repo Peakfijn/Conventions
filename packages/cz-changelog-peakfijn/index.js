@@ -48,8 +48,8 @@ module.exports = {
 
 			cz.prompt(questions).then(function (answers) {
 				const scope = answers.scope ? `(${answers.scope})` : '';
-				const head = `${answers.type}${scope}: ${answers.subject}`;
-				const footer = (answers.footer || '').split(' ').join('\n');
+				const head = `${answers.type}${scope}: ${answers.subject.trim()}`;
+				const footer = (answers.footer.trim() || '').split(' ').join('\n');
 
 				const commitMessage = `${head}\n\n${answers.body}\n\n${footer}`.trim();
 
