@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-peakfijn",
-	"version": "0.8.0",
+	"version": "0.8.1",
 	"description": "Sharable configuration for ESLint with Peakfijn conventions",
 	"keywords": [
 		"eslint",

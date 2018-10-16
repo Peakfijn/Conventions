@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-release-laravel",
-	"version": "0.8.0",
+	"version": "0.8.1",
 	"description": "Sharable configuration for Semantic Releases with Laravel",
 	"keywords": [
 		"semantic",

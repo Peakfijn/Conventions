@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-commitlint",
-	"version": "0.8.0",
+	"version": "0.8.1",
 	"description": "Sharable configuration for Commitlint with Peakfijn conventions",
 	"keywords": [
 		"commitlint",
