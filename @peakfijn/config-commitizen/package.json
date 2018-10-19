@@ -26,7 +26,7 @@
 		"test": "node -c index.js && node -c bin/commitizen && node -c bin/git-cz"
 	},
 	"dependencies": {
-		"commitizen": "^2.10.1",
+		"commitizen": "^3.0.3",
 		"cz-changelog-peakfijn": "0.8.1",
 		"resolve-pkg": "^1.0.0"
 	}
