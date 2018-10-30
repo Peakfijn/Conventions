@@ -27,6 +27,6 @@
 	"dependencies": {
 		"resolve-pkg": "^1.0.0",
 		"stylelint": "^9.5.0",
-		"stylelint-config-peakfijn": "0.8.0"
+		"stylelint-config-peakfijn": "0.8.3"
 	}
 }
