@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-peakfijn-expo",
-	"version": "0.8.0",
+	"version": "0.8.3",
 	"description": "Sharable configuration for ESLint with Expo using Peakfijn conventions",
 	"keywords": [
 		"eslint",
