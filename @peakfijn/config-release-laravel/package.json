@@ -31,7 +31,7 @@
 		"@semantic-release/commit-analyzer": "^6.0.0",
 		"@semantic-release/npm": "^5.0.1",
 		"@semantic-release/release-notes-generator": "^7.0.0",
-		"conventional-changelog-peakfijn": "0.8.0",
+		"conventional-changelog-peakfijn": "0.8.3",
 		"release-rules-peakfijn": "0.8.0",
 		"resolve-pkg": "^1.0.0",
 		"semantic-release": "^15.9.5",
