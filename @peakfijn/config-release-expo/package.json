@@ -32,7 +32,7 @@
 		"@semantic-release/npm": "^5.0.1",
 		"@semantic-release/release-notes-generator": "^7.0.2",
 		"conventional-changelog-peakfijn": "0.8.0",
-		"release-rules-peakfijn": "0.8.0",
+		"release-rules-peakfijn": "0.8.3",
 		"resolve-pkg": "^1.0.0",
 		"semantic-release": "^15.9.15",
 		"semantic-release-expo": "^2.1.0",
