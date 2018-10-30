@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"commitizen": "^3.0.3",
-		"cz-changelog-peakfijn": "0.8.1",
+		"cz-changelog-peakfijn": "0.8.3",
 		"resolve-pkg": "^1.0.0"
 	}
 }
