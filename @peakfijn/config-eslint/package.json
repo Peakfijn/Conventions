@@ -26,7 +26,7 @@
 	},
 	"dependencies": {
 		"eslint": "^5.5.0",
-		"eslint-config-peakfijn": "0.8.1",
+		"eslint-config-peakfijn": "0.8.3",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jsdoc": "^3.8.0",
 		"eslint-plugin-jsx-a11y": "^6.1.1",
