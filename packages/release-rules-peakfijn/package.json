@@ -23,6 +23,6 @@
 		"test": "node -c index.js"
 	},
 	"devDependencies": {
-		"commit-types-peakfijn": "0.8.0"
+		"commit-types-peakfijn": "0.8.3"
 	}
 }
