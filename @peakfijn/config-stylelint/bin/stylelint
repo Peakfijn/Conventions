@@ -4,6 +4,6 @@ const resolvePkg = require('resolve-pkg');
 
 const directory = resolvePkg('stylelint', { cwd: __dirname });
 const manifest = require(path.resolve(directory, 'package.json'));
-const bin = path.resolve(directory, manifest.bin);
+const bin = path.resolve(directory, manifest.bin.stylelint || manifest.bin);
 
 require(bin);
