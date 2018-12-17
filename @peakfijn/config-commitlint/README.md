@@ -18,7 +18,7 @@ Update the `package.json` to include a [commitlint](https://github.com/marionebl
 {
 	"commitlint": {
 		"extends": [
-			"@peakfijn/config-commitlint"
+			"peakfijn"
 		]
 	}
 }
@@ -31,3 +31,7 @@ After installing and configuring the package, you can use it by running this com
 ```bash
 $ npx commitlint --to HEAD
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
