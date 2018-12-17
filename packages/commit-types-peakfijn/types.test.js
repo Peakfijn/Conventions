@@ -11,6 +11,29 @@ const isHumanReadable = value => (
 	typeof value === 'string' && value.length > 0
 );
 
+test('types are defined in proper order', t => {
+	const typesList = Object.keys(types);
+	const expectedOrder = [
+		'feature',
+		'fix',
+		'test',
+		'performance',
+		'documentation',
+		'pipeline',
+		'style',
+		'refactor',
+		'release',
+		'chore',
+	];
+
+	t.true(
+		typesList.reduce(
+			(success, type, index) => success && expectedOrder.indexOf(type) === index,
+			true
+		)
+	);
+});
+
 test('feature is defined as minor release with human-readable information', t => {
 	t.is(types.feature.release, 'minor');
 	t.true(isHumanReadable(types.feature.name));
