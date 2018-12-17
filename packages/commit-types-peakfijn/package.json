@@ -19,9 +19,9 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "json -f index.json"
+		"test": "ava"
 	},
 	"devDependencies": {
-		"json": "^9.0.6"
+		"ava": "^1.0.1"
 	}
 }
