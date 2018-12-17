@@ -1,4 +1,5 @@
 import test from 'ava';
+import { isEqual } from 'lodash';
 import types from './index.json';
 
 /**
@@ -26,12 +27,7 @@ test('types are defined in proper order', t => {
 		'chore',
 	];
 
-	t.true(
-		typesList.reduce(
-			(success, type, index) => success && expectedOrder.indexOf(type) === index,
-			true
-		)
-	);
+	t.true(isEqual(typesList, expectedOrder));
 });
 
 test('feature is defined as minor release with human-readable information', t => {

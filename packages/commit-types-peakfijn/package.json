@@ -22,6 +22,7 @@
 		"test": "ava"
 	},
 	"devDependencies": {
-		"ava": "^1.0.1"
+		"ava": "^1.0.1",
+		"lodash": "^4.17.11"
 	}
 }
