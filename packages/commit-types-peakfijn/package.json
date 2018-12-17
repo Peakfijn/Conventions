@@ -9,7 +9,7 @@
 	],
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
-	"main": "types.json",
+	"main": "index.json",
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/packages/commit-types-peakfijn#readme",
 	"repository": {
 		"type": "git",

@@ -1,5 +1,5 @@
 import test from 'ava';
-import types from './types.json';
+import types from './index.json';
 
 /**
  * Estimate if a certain value can be human readable.
