@@ -9,13 +9,13 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
-	"homepage": "https://github.com/peakfijn/peakfijn-conventions/tree/develop/packages/commitlint-config-peakfijn#readme",
+	"homepage": "https://github.com/peakfijn/conventions/tree/develop/packages/commitlint-config-peakfijn#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/peakfijn/peakfijn-conventions.git"
+		"url": "git+https://github.com/peakfijn/conventions.git"
 	},
 	"bugs": {
-		"url": "https://github.com/peakfijn/peakfijn-conventions/issues"
+		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
 		"test": "node -c index.js"
