@@ -20,9 +20,12 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "ava"
 	},
 	"dependencies": {
 		"commit-types-peakfijn": "0.8.3"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1"
 	}
 }
