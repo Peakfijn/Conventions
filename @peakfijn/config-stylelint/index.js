@@ -1,3 +1,1 @@
-const config = require('stylelint-config-peakfijn');
-
-module.exports = config;
+module.exports = require('stylelint-config-peakfijn');

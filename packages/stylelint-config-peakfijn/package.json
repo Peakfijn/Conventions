@@ -19,10 +19,14 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "ava"
 	},
 	"dependencies": {
 		"stylelint-config-concentric-order": "^3.4.0",
 		"stylelint-config-standard": "^18.2.0"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1",
+		"lodash": "^4.17.11"
 	}
 }
