@@ -20,7 +20,7 @@ module.exports = {
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
 		'valid-jsdoc': ['error', {
-			matchDescription: '^(?!(\[(.+)?description\]))',
+			matchDescription: '^(?!\\[.*description\\])',
 			requireParamDescription: false,
 			requireReturnDescription: false,
 			prefer: {
