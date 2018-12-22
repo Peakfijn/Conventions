@@ -1,5 +1,3 @@
-'use strict';
-
 const commitTypes = require('commit-types-peakfijn');
 const config = require('@commitlint/config-conventional');
 
