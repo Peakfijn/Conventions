@@ -1,5 +1,3 @@
-'use strict';
-
 const commitTypes = require('commit-types-peakfijn');
 const defaultRules = [
 	{ breaking: true, release: 'major' },
