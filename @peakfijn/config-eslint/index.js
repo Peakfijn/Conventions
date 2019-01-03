@@ -1,3 +1,1 @@
-const config = require('eslint-config-peakfijn');
-
-module.exports = config;
+module.exports = require('eslint-config-peakfijn');

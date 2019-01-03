@@ -11,6 +11,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"eslint": "./bin/eslint"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-eslint-expo#readme",
 	"repository": {
 		"type": "git",
@@ -20,18 +23,24 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "ava"
 	},
 	"dependencies": {
 		"babel-eslint": "^9.0.0",
 		"eslint": "^5.5.0",
-		"eslint-config-peakfijn": "0.8.3",
 		"eslint-config-peakfijn-expo": "0.8.3",
 		"eslint-import-resolver-babel-module": "^4.0.0",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jest": "^22.0.0",
 		"eslint-plugin-jsdoc": "^3.8.0",
 		"eslint-plugin-jsx-a11y": "^6.1.1",
-		"eslint-plugin-react": "^7.11.1"
+		"eslint-plugin-react": "^7.11.1",
+		"resolve-pkg": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11",
+		"semver": "^5.6.0"
 	}
 }

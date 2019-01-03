@@ -19,12 +19,16 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "ava"
 	},
 	"dependencies": {
 		"eslint-config-airbnb": "^17.1.0"
 	},
 	"peerDependencies": {
 		"eslint-plugin-jsdoc": "^3.8.0"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1",
+		"lodash": "^4.17.11"
 	}
 }

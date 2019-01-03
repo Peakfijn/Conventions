@@ -19,10 +19,7 @@ Update the `package.json` to include an [eslintConfig](https://eslint.org/docs/u
 ```json
 {
 	"eslintConfig": {
-		"extends": [
-			"eslint-config-peakfijn",
-			"eslint-config-peakfijn-expo"
-		]
+		"extends": "peakfijn-expo"
 	}
 }
 ```
@@ -34,3 +31,7 @@ After installing and configuring the package, you can use it by running this com
 ```bash
 $ npx eslint 'src/**/*.js'
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
