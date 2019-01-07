@@ -33,9 +33,9 @@
 		},
 		"semantic-release": {
 			"packages": [
+				"@peakfijn/config-release/package.json",
 				"@peakfijn/config-release-expo/package.json",
 				"@peakfijn/config-release-laravel/package.json",
-				"@peakfijn/config-release-os/package.json",
 				"@peakfijn/config-release-react/package.json",
 				"packages/conventional-changelog-peakfijn/package.json",
 				"packages/release-rules-peakfijn/package.json"

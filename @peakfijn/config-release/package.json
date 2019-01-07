@@ -1,12 +1,13 @@
 {
-	"name": "@peakfijn/config-release-react",
-	"version": "0.8.3",
-	"description": "Sharable configuration for Semantic Releases with React",
+	"name": "@peakfijn/config-release",
+	"version": "0.0.0",
+	"description": "Sharable configuration for Semantic Releases with basic open source projects",
 	"keywords": [
 		"semantic",
 		"release",
 		"config",
-		"react",
+		"open",
+		"source",
 		"peakfijn"
 	],
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
@@ -15,7 +16,7 @@
 	"bin": {
 		"semantic-release": "./bin/semantic-release"
 	},
-	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-release-react#readme",
+	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-release#readme",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/peakfijn/conventions.git"
