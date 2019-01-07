@@ -2,12 +2,33 @@
 	"scripts": {
 		"release": "lerna publish --exact",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
-		"test": "lerna run test"
+		"test": "lerna run test",
+		"install": "lerna bootstrap"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^7.1.2",
 		"@commitlint/travis-cli": "^7.1.2",
 		"lerna": "^3.3.0"
+	},
+	"commitlint": {
+		"extends": [
+			"./packages/commitlint-config-peakfijn"
+		],
+		"rules": {
+			"scope-empty": [0],
+			"scope-enum": [
+				2,
+				"always",
+				[
+					"changelog",
+					"commitizen",
+					"commitlint",
+					"eslint",
+					"semantic-release",
+					"stylelint"
+				]
+			]
+		}
 	},
 	"greenkeeper": {
 		"commitMessages": {
