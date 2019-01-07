@@ -22,10 +22,13 @@
 		"index.json"
 	],
 	"scripts": {
+		"pretest": "xo",
 		"test": "ava"
 	},
 	"devDependencies": {
 		"ava": "^1.0.1",
-		"lodash": "^4.17.11"
-	}
+		"lodash": "^4.17.11",
+		"xo": "^0.23.0"
+	},
+	"xo": false
 }

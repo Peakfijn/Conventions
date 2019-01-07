@@ -26,6 +26,7 @@
 		"bin/commitlint"
 	],
 	"scripts": {
+		"pretest": "xo",
 		"test": "ava"
 	},
 	"dependencies": {
@@ -37,6 +38,8 @@
 		"ava": "^1.0.1",
 		"execa": "^1.0.0",
 		"lodash": "^4.17.11",
-		"semver": "^5.6.0"
-	}
+		"semver": "^5.6.0",
+		"xo": "^0.23.0"
+	},
+	"xo": false
 }
