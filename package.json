@@ -3,7 +3,7 @@
 		"release": "lerna publish --exact",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
 		"test": "lerna run test",
-		"install": "lerna bootstrap"
+		"install": "lerna bootstrap --no-ci"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^7.1.2",
