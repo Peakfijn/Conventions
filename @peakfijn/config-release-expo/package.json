@@ -24,7 +24,7 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js && node -c bin/semantic-release"
+		"test": "ava"
 	},
 	"dependencies": {
 		"@semantic-release/changelog": "^3.0.0",
@@ -37,5 +37,10 @@
 		"semantic-release": "^15.9.15",
 		"semantic-release-expo": "^2.1.0",
 		"semantic-release-git-branches": "^1.2.1"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11"
 	}
 }

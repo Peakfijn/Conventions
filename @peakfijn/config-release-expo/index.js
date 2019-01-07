@@ -39,11 +39,11 @@ module.exports = {
 			message: 'release: create new version ${nextRelease.version}\n\n${nextRelease.notes}',
 			assets: [
 				'CHANGELOG.md',
+				'package.json',
+				'package-lock.json',
 				'app.test.json',
 				'app.staging.json',
 				'app.production.json',
-				'package.json',
-				'package-lock.json',
 			],
 		},
 	],
