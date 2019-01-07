@@ -40,5 +40,9 @@ And make sure `package.json` also contains the basic repository (**git url**) in
 After installing and configuring the package, you can use it by running this command.
 
 ```bash
-$ npx semantic-release'
+$ npx semantic-release
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
