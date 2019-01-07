@@ -76,7 +76,7 @@ test('#getScopes returns enabled with none and scopes when scope-empty is always
 	});
 
 	const expectedChoices = [noneChoice].concat(
-		scopes.map(scope => scopeToChoice(scope))
+		scopes.map(scope => scopeToChoice(scope)),
 	);
 
 	t.true(enabled);

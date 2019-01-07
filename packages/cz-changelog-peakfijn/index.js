@@ -6,8 +6,8 @@ const getScopes = require('./get-scopes');
 const getTypes = require('./get-types');
 
 module.exports = {
-	prompter: function (cz, commit) {
-		commitlintLoad({ extends: ['peakfijn'] }).then(function (commitlintConfig) {
+	prompter(cz, commit) {
+		commitlintLoad({ extends: ['peakfijn'] }).then(commitlintConfig => {
 			const scopeInfo = getScopes(commitlintConfig);
 			const typeInfo = getTypes(commitlintConfig);
 
@@ -43,14 +43,14 @@ module.exports = {
 				},
 			];
 
-			cz.prompt(questions).then(function (answers) {
+			cz.prompt(questions).then(answers => {
 				const scope = answers.scope ? `(${answers.scope})` : '';
 				const head = `${answers.type}${scope}: ${answers.subject.trim()}`;
 				const footer = (answers.footer || '').trim().split(' ').join('\n');
 
 				const commitMessage = `${head}\n\n${answers.body}\n\n${footer}`.trim();
 
-				commitlintLint(commitMessage, commitlintConfig.rules).then(function (report) {
+				commitlintLint(commitMessage, commitlintConfig.rules).then(report => {
 					if (reportIsValid(report)) {
 						commit(commitMessage);
 					} else {

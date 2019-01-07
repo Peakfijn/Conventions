@@ -1,6 +1,6 @@
 module.exports = {
 	branch: 'develop',
-	tagFormat: '${version}',
+	tagFormat: '${version}', // eslint-disable-line no-template-curly-in-string
 	plugins: [
 		[
 			'@semantic-release/commit-analyzer',
@@ -20,6 +20,7 @@ module.exports = {
 		[
 			'@semantic-release/git',
 			{
+				// eslint-disable-next-line no-template-curly-in-string
 				message: 'release: create new version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
 				assets: [
 					'CHANGELOG.md',
@@ -29,5 +30,5 @@ module.exports = {
 			},
 		],
 		'@semantic-release/github',
-	]
+	],
 };

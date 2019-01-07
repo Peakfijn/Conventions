@@ -1,8 +1,8 @@
 import test from 'ava';
 import types from 'commit-types-peakfijn';
 import { includes, isEqual } from 'lodash';
-import { rules } from './index';
 import { rules as baseRules } from '@commitlint/config-conventional';
+import { rules } from '.';
 
 test('inherits basic rules from @commitlint/config-conventional', t => {
 	t.true(includes(

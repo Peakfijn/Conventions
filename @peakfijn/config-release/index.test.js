@@ -7,10 +7,10 @@ import {
 	template,
 } from 'lodash';
 
-import config from './index';
-import pkg from './package.json';
+import pkg from './package';
+import config from '.';
 
-const findPlugin = (name) => {
+const findPlugin = name => {
 	const plugin = config.plugins.find(plugin => (
 		castArray(plugin)[0] === name
 	));
@@ -62,10 +62,21 @@ test('config uses git plugin with predefined message and assets', t => {
 		'package-lock.json',
 	];
 
+	// eslint-disable-next-line no-template-curly-in-string
 	t.is(plugin.message, 'release: create new version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}');
 	t.true(isEqual(plugin.assets, assets));
 });
 
 test('config uses github plugin', t => {
 	t.truthy(findPlugin('@semantic-release/github'));
+});
+
+test('binary defers call to semantic release', async t => {
+	const { stdout: help } = await execa(
+		pkg.bin['semantic-release'],
+		['--help'],
+		{ cwd: __dirname },
+	);
+
+	t.true(help.includes('Run automated package publishing'));
 });

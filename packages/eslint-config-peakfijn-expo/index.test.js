@@ -1,6 +1,6 @@
 import test from 'ava';
 import { castArray, has } from 'lodash';
-import config from './index';
+import config from '.';
 
 test('config extends from peakfijn', t => {
 	t.true(castArray(config.extends).includes('peakfijn'));

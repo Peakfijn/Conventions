@@ -58,7 +58,7 @@ test('returns enabled with choices when type-enum is enabled and non-peakfijn ty
 test('returns enabled with choices (in order) when type-enum is enbaled', t => {
 	const peakfijnTypes = Object.keys(commitTypes);
 	const types = ['other'].concat(peakfijnTypes);
-	const { enabled, maxLength, choices } = getTypes({
+	const { enabled, choices } = getTypes({
 		rules: {
 			'type-enum': [2, 'always', types],
 		},

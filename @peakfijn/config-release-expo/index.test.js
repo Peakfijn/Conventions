@@ -1,8 +1,8 @@
 import test from 'ava';
 import execa from 'execa';
 import { find, isEqual, template } from 'lodash';
-import config from './index';
-import pkg from './package.json';
+import pkg from './package';
+import config from '.';
 
 test('config uses develop branch', t => {
 	t.is(config.branch, 'develop');
@@ -111,7 +111,7 @@ test('binary defers call to semantic release', async t => {
 	const { stdout: help } = await execa(
 		pkg.bin['semantic-release'],
 		['--help'],
-		{ cwd: __dirname }
+		{ cwd: __dirname },
 	);
 
 	t.true(help.includes('Run automated package publishing'));

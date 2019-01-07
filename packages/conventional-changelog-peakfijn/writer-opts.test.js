@@ -12,7 +12,7 @@ const defaultContext = {
 	repoUrl: 'https://github.com/peakfijn/conventions',
 };
 
-const parseCommit = async (commit) => {
+const parseCommit = async commit => {
 	const angular = await angularPreset;
 	const parsed = commitParser(commit, angular.parserOpts);
 	parsed.raw = commit;

@@ -1,13 +1,7 @@
 import test from 'ava';
 import { isEqual } from 'lodash';
-import types from './index.json';
+import types from '.';
 
-/**
- * Estimate if a certain value can be human readable.
- *
- * @param  {any} value
- * @return {boolean}
- */
 const isHumanReadable = value => (
 	typeof value === 'string' && value.length > 0
 );

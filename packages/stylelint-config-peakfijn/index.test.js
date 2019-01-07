@@ -1,6 +1,6 @@
 import test from 'ava';
 import { castArray } from 'lodash';
-import config from './index';
+import config from '.';
 
 test('config extends from standard', t => {
 	t.true(castArray(config.extends).includes('stylelint-config-standard'));
