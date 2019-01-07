@@ -1,8 +1,8 @@
 import test from 'ava';
 import { cloneDeep, isEqual } from 'lodash';
 import angularPreset from 'conventional-changelog-angular';
-import peakfijnPreset from './index';
 import customWriter from './writer-opts';
+import peakfijnPreset from '.';
 
 test('returns peakfijn preset with custom writer', async t => {
 	const peakfijn = await peakfijnPreset;

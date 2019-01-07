@@ -1,12 +1,12 @@
+const Q = require('q');
 const angularPreset = require('conventional-changelog-angular');
 const commitTypes = require('commit-types-peakfijn');
-const Q = require('q');
 
 module.exports = Q.all([angularPreset])
-	.spread(function (convention) {
+	.spread(convention => {
 		const writer = convention.writerOpts;
 
-		writer.transform = function (commit, context) {
+		writer.transform = (commit, context) => {
 			const typeInfo = commitTypes[commit.type];
 			const issues = [];
 
@@ -32,7 +32,7 @@ module.exports = Q.all([angularPreset])
 				if (url) {
 					url = `${url}/issues/`;
 					// Issue URLs.
-					commit.subject = commit.subject.replace(/#([0-9]+)/g, (_, issue) => {
+					commit.subject = commit.subject.replace(/#(\d+)/g, (_, issue) => {
 						issues.push(issue);
 
 						return `[#${issue}](${url}${issue})`;
@@ -42,7 +42,7 @@ module.exports = Q.all([angularPreset])
 				if (context.host) {
 					commit.subject = commit.subject.replace(
 						/\B@([a-z0-9](?:-?[a-z0-9]){0,38})/g,
-						`[@$1](${context.host}/$1)`
+						`[@$1](${context.host}/$1)`,
 					);
 				}
 			}

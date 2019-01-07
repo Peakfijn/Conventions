@@ -1,6 +1,6 @@
 import test from 'ava';
 import types from 'commit-types-peakfijn';
-import rules from './index';
+import rules from '.';
 
 test('breaking changes bumps new major version', t => {
 	t.is(rules.find(rule => rule.breaking).release, 'major');

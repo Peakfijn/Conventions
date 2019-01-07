@@ -1,6 +1,6 @@
 import test from 'ava';
 import { castArray, isEqual } from 'lodash';
-import config from './index';
+import config from '.';
 
 test('config extends from airbnb', t => {
 	t.true(castArray(config.extends).includes('airbnb'));
@@ -16,7 +16,7 @@ test('config defines max length rule with 120 characters', t => {
 
 test('config defines all indentation rules with tabs', t => {
 	t.true(isEqual(config.rules['no-tabs'], 'off'));
-	t.true(isEqual(config.rules['indent'], ['error', 'tab', { SwitchCase: 1 }]));
+	t.true(isEqual(config.rules.indent, ['error', 'tab', { SwitchCase: 1 }]));
 	t.true(isEqual(config.rules['react/jsx-indent'], ['error', 'tab']));
 	t.true(isEqual(config.rules['react/jsx-indent-props'], ['error', 'tab']));
 });

@@ -68,24 +68,24 @@ function reportSummary(report = {}) {
 	const countWarnings = report.warnings.length;
 	const color = countErrors > 0 ? 'red' : 'yellow';
 
-	let summaries = [];
-	let issues = [];
+	const summaries = [];
+	const issues = [];
 
 	if (countErrors > 0) {
 		summaries.push(chalk`{red ${countErrors}} ${countErrors === 1 ? 'error' : 'errors'}`);
-		report.errors.forEach(function (error) {
+		report.errors.forEach(error => {
 			issues.push(chalk`  {bold.red -} ${error.message} {dim ${error.name}}`);
 		});
 	}
 
 	if (countWarnings > 0) {
 		summaries.push(chalk`{yellow ${countWarnings}} ${countWarnings === 1 ? 'warning' : 'warnings'}`);
-		report.warnings.forEach(function (warning) {
+		report.warnings.forEach(warning => {
 			issues.push(chalk`  {bold.yellow -} ${warning.message} {dim ${warning.name}}`);
 		});
 	}
 
-	const summary = !summaries.length ? '' : chalk`{dim ${summaries.join(', ')}}`;
+	const summary = summaries.length > 0 ? chalk`{dim ${summaries.join(', ')}}` : '';
 	const header = chalk`{bold.${color} !} {bold Final commit violates conventions} ${summary}`;
 	const footer = chalk`{dim aborted commit}`;
 

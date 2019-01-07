@@ -4,7 +4,7 @@ module.exports = {
 		'jsdoc',
 	],
 	rules: {
-		'indent': ['error', 'tab', { SwitchCase: 1 }],
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'jsdoc/check-param-names': 'error',
 		'jsdoc/check-types': 'error',
 		'jsdoc/newline-after-description': 'error',

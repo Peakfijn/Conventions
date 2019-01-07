@@ -20,9 +20,13 @@ function sortTypeEnums(types) {
 
 		if (aIndex >= 0 && bIndex >= 0) {
 			return aIndex - bIndex;
-		} else if (aIndex >= 0 && bIndex < 0) {
-			return -1
-		} else if (aIndex < 0 && bIndex >= 0) {
+		}
+
+		if (aIndex >= 0 && bIndex < 0) {
+			return -1;
+		}
+
+		if (aIndex < 0 && bIndex >= 0) {
 			return 1;
 		}
 
@@ -30,15 +34,15 @@ function sortTypeEnums(types) {
 	});
 }
 
-module.exports = function getTypes(commitlint = {}) {
+module.exports = (commitlint = {}) => {
 	const typeRule = getRule(commitlint, 'type-enum');
 	const typeEnums = sortTypeEnums(typeRule.value || []);
 
 	const maxLength = typeEnums.reduce((carry, type) => type.length > carry ? type.length : carry, 0);
 
 	return {
+		maxLength,
 		enabled: ruleIsEnabled(typeRule),
-		maxLength: maxLength,
 		choices: typeEnums.map(type => ({
 			value: type,
 			short: type,
