@@ -4,7 +4,7 @@
 		"@peakfijn/*",
 		"packages/*"
 	],
-	"version": "0.8.3",
+	"version": "1.0.0-rc.0",
 	"command": {
 		"version": {
 			"allowBranch": "master",

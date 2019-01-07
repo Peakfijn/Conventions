@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-eslint-expo",
-	"version": "0.8.3",
+	"version": "1.0.0-rc.0",
 	"description": "Sharable configuration for ESLint with Peakfijn conventions for Expo",
 	"keywords": [
 		"eslint",
@@ -32,7 +32,7 @@
 	"dependencies": {
 		"babel-eslint": "^9.0.0",
 		"eslint": "^5.5.0",
-		"eslint-config-peakfijn-expo": "0.8.3",
+		"eslint-config-peakfijn-expo": "1.0.0-rc.0",
 		"eslint-import-resolver-babel-module": "^4.0.0",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jest": "^22.0.0",

@@ -1,6 +1,6 @@
 {
 	"name": "conventional-changelog-peakfijn",
-	"version": "0.8.3",
+	"version": "1.0.0-rc.0",
 	"description": "A conventional changelog preset for Peakfijn conventions",
 	"keywords": [
 		"conventional",
@@ -26,7 +26,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"commit-types-peakfijn": "0.8.3",
+		"commit-types-peakfijn": "1.0.0-rc.0",
 		"conventional-changelog-angular": "^5.0.0",
 		"q": "^1.5.1"
 	},
