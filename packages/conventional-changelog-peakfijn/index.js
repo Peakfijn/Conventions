@@ -1,5 +1,3 @@
-'use strict';
-
 const angularPreset = require('conventional-changelog-angular');
 const peakfijnWriterOps = require('./writer-opts');
 const Q = require('q');
