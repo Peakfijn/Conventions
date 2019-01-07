@@ -1,5 +1,3 @@
-'use strict';
-
 const angularPreset = require('conventional-changelog-angular');
 const commitTypes = require('commit-types-peakfijn');
 const Q = require('q');
