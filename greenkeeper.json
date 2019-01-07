@@ -5,6 +5,11 @@
 				"package.json"
 			]
 		},
+		"changelog": {
+			"packages": [
+				"packages/conventional-changelog-peakfijn/package.json",
+			]
+		},
 		"commitlint": {
 			"packages": [
 				"@peakfijn/config-commitlint/package.json",
@@ -20,8 +25,8 @@
 		},
 		"eslint": {
 			"packages": [
-				"@peakfijn/config-eslint-expo/package.json",
 				"@peakfijn/config-eslint/package.json",
+				"@peakfijn/config-eslint-expo/package.json",
 				"packages/eslint-config-peakfijn-expo/package.json",
 				"packages/eslint-config-peakfijn/package.json"
 			]
@@ -30,6 +35,7 @@
 			"packages": [
 				"@peakfijn/config-release-expo/package.json",
 				"@peakfijn/config-release-laravel/package.json",
+				"@peakfijn/config-release-os/package.json",
 				"@peakfijn/config-release-react/package.json",
 				"packages/conventional-changelog-peakfijn/package.json",
 				"packages/release-rules-peakfijn/package.json"
