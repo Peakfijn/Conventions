@@ -1,5 +1,3 @@
-'use strict';
-
 const { getRule, ruleIsEnabled } = require('./commitlint-utils');
 
 module.exports = function getScopes(commitlint = {}) {

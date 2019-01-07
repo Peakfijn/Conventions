@@ -1,5 +1,3 @@
-'use strict';
-
 const chalk = require('chalk');
 
 /**
@@ -62,6 +60,10 @@ function reportIsValid(report = {}) {
  * @return {string}
  */
 function reportSummary(report = {}) {
+	if (reportIsValid(report)) {
+		return '';
+	}
+
 	const countErrors = report.errors.length;
 	const countWarnings = report.warnings.length;
 	const color = countErrors > 0 ? 'red' : 'yellow';
@@ -79,7 +81,7 @@ function reportSummary(report = {}) {
 	if (countWarnings > 0) {
 		summaries.push(chalk`{yellow ${countWarnings}} ${countWarnings === 1 ? 'warning' : 'warnings'}`);
 		report.warnings.forEach(function (warning) {
-			issues.push(chalk`  {bold.yellow -} ${error.message} {dim ${error.name}}`);
+			issues.push(chalk`  {bold.yellow -} ${warning.message} {dim ${warning.name}}`);
 		});
 	}
 

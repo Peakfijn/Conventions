@@ -23,11 +23,15 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js && node -c bin/commitizen && node -c bin/git-cz"
+		"test": "ava"
 	},
 	"dependencies": {
 		"commitizen": "^3.0.3",
 		"cz-changelog-peakfijn": "0.8.3",
 		"resolve-pkg": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1",
+		"lodash": "^4.17.11"
 	}
 }

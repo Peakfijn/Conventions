@@ -1,6 +1,3 @@
-'use strict';
-
-const commitTypes = require('commit-types-peakfijn');
 const commitlintLoad = require('@commitlint/load');
 const commitlintLint = require('@commitlint/lint');
 
@@ -18,7 +15,7 @@ module.exports = {
 				{
 					type: 'list',
 					name: 'type',
-					message: 'What is the most appropiate change type? (in priority)\n',
+					message: 'What is the most appropriate change type? (in priority)\n',
 					choices: typeInfo.choices,
 					when: typeInfo.enabled,
 				},
@@ -42,7 +39,7 @@ module.exports = {
 				{
 					type: 'input',
 					name: 'footer',
-					message: 'Provide any trello card or stackoverflow links, separated by a space: (press enter to skip)\n',
+					message: 'Provide any (external) references, separated by a space: (press enter to skip)\n',
 				},
 			];
 
