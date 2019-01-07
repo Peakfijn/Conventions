@@ -21,6 +21,10 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"bin/commitlint"
+	],
 	"scripts": {
 		"test": "ava"
 	},

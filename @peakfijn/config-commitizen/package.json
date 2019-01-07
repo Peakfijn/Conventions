@@ -22,6 +22,11 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"bin/commitizen",
+		"bin/git-cz"
+	],
 	"scripts": {
 		"test": "ava"
 	},

@@ -18,6 +18,10 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"writer-opts.js"
+	],
 	"scripts": {
 		"test": "ava"
 	},

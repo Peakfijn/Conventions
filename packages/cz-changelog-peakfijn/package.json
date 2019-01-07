@@ -18,6 +18,12 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"commitlint-utils.js",
+		"get-scopes.js",
+		"get-types.js",
+		"index.js"
+	],
 	"scripts": {
 		"test": "ava"
 	},

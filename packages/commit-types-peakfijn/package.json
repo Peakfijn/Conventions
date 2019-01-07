@@ -18,6 +18,9 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.json"
+	],
 	"scripts": {
 		"test": "ava"
 	},
