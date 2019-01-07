@@ -29,6 +29,7 @@
 		"bin/semantic-release"
 	],
 	"scripts": {
+		"pretest": "xo",
 		"test": "ava"
 	},
 	"dependencies": {
@@ -46,6 +47,8 @@
 	"devDependencies": {
 		"ava": "^1.0.1",
 		"execa": "^1.0.0",
-		"lodash": "^4.17.11"
-	}
+		"lodash": "^4.17.11",
+		"xo": "^0.23.0"
+	},
+	"xo": false
 }
