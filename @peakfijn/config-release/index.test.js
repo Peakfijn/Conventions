@@ -1,8 +1,26 @@
 import test from 'ava';
 import execa from 'execa';
-import { find, isEqual, template } from 'lodash';
+import {
+	castArray,
+	isArray,
+	isEqual,
+	template,
+} from 'lodash';
+
 import config from './index';
 import pkg from './package.json';
+
+const findPlugin = (name) => {
+	const plugin = config.plugins.find(plugin => (
+		castArray(plugin)[0] === name
+	));
+
+	if (!plugin || !isArray(plugin)) {
+		return plugin;
+	}
+
+	return plugin[1] || plugin[0];
+};
 
 test('config uses develop branch', t => {
 	t.is(config.branch, 'develop');
@@ -15,89 +33,39 @@ test('config uses unprefixed version name for tags', t => {
 	t.is(render({ version }), version);
 });
 
-test('config uses default commit analyser with peakfijn presets', t => {
-	t.is(config.analyzeCommits.path, '@semantic-release/commit-analyzer');
-	t.is(config.analyzeCommits.preset, 'peakfijn');
-	t.is(config.analyzeCommits.releaseRules, 'release-rules-peakfijn');
+test('config uses commit analyser with peakfijn preset', t => {
+	const plugin = findPlugin('@semantic-release/commit-analyzer');
+
+	t.is(plugin.preset, 'peakfijn');
+	t.is(plugin.releaseRules, 'release-rules-peakfijn');
 });
 
-test('config uses default notes generator with peakfijn presets', t => {
-	const generator = find(config.generateNotes, {
-		path: '@semantic-release/release-notes-generator',
-		preset: 'peakfijn',
-	});
+test('config uses release note generator with peakfijn preset', t => {
+	const plugin = findPlugin('@semantic-release/release-notes-generator');
 
-	t.truthy(generator);
+	t.is(plugin.preset, 'peakfijn');
 });
 
-test('config uses the changelog plugin', t => {
-	t.true(config.verifyConditions.includes('@semantic-release/changelog'));
-	t.true(config.prepare.includes('@semantic-release/changelog'));
+test('config uses changelog plugin', t => {
+	t.truthy(findPlugin('@semantic-release/changelog'));
 });
 
-test('config uses the npm plugin, without publishing by default', t => {
-	const prepare = find(config.prepare, { path: '@semantic-release/npm' });
-
-	t.true(config.verifyConditions.includes('@semantic-release/npm'));
-	t.false(prepare.npmPublish);
+test('config uses npm plugin', t => {
+	t.truthy(findPlugin('@semantic-release/npm'));
 });
 
-
-test('config uses the git branches pluginwith proper branches', t => {
-	const prepare = find(config.prepare, { path: 'semantic-release-git-branches' });
-	const hasBranches = isEqual(prepare.branchMerges, ['develop', 'master']);
-
-	t.true(config.verifyConditions.includes('semantic-release-git-branches'));
-	t.true(prepare.branchPush);
-	t.true(hasBranches);
-});
-
-test('config uses the git branches plugin with proper assets', t => {
-	const prepare = find(config.prepare, { path: 'semantic-release-git-branches' });
+test('config uses git plugin with predefined message and assets', t => {
+	const plugin = findPlugin('@semantic-release/git');
 	const assets = [
 		'CHANGELOG.md',
 		'package.json',
 		'package-lock.json',
 	];
 
-	t.true(isEqual(prepare.assets, assets));
+	t.is(plugin.message, 'release: create new version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}');
+	t.true(isEqual(plugin.assets, assets));
 });
 
-test('config uses the git branches plugin with proper message', t => {
-	const prepare = find(config.prepare, { path: 'semantic-release-git-branches' });
-	const render = template(prepare.message);
-	const nextRelease = {
-		version: '1.0.0',
-		notes: 'Changes',
-	};
-
-	t.is(render({ nextRelease }), 'release: create new version 1.0.0\n\nChanges');
-});
-
-test('config doesnt publish or notfies by default', t => {
-	t.false(config.publish);
-	t.false(config.success);
-	t.false(config.fail);
-});
-
-test('config defines all plugins in proper order', t => {
-	const prepare = config.prepare.map(plugin => plugin.path || plugin);
-	const order = [
-		'@semantic-release/changelog',
-		'@semantic-release/npm',
-		'semantic-release-git-branches',
-	];
-
-	t.true(isEqual(config.verifyConditions, order));
-	t.true(isEqual(prepare, order));
-});
-
-test('binary defers call to semantic release', async t => {
-	const { stdout: help } = await execa(
-		pkg.bin['semantic-release'],
-		['--help'],
-		{ cwd: __dirname }
-	);
-
-	t.true(help.includes('Run automated package publishing'));
+test('config uses github plugin', t => {
+	t.truthy(findPlugin('@semantic-release/github'));
 });
