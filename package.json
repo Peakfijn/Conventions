@@ -10,7 +10,8 @@
 		"@commitlint/cli": "^7.1.2",
 		"@commitlint/travis-cli": "^7.1.2",
 		"conventional-changelog-cli": "^2.0.11",
-		"lerna": "^3.8.5"
+		"lerna": "^3.8.5",
+		"xo": "^0.23.0"
 	},
 	"commitlint": {
 		"extends": [
@@ -43,6 +44,41 @@
 			"devDependencyUpdate": "refactor: upgrade ${dependency} to version ${version}",
 			"dependencyPin": "fix: freeze ${dependency} to ${oldVersion}",
 			"devDependencyPin": "fix: freeze ${dependency} to ${oldVersion}"
+		}
+	},
+	"xo": {
+		"rules": {
+			"comma-dangle": [
+				"error",
+				{
+					"arrays": "always-multiline",
+					"objects": "always-multiline",
+					"imports": "always-multiline",
+					"exports": "always-multiline",
+					"functions": "always-multiline"
+				}
+			],
+			"object-curly-spacing": [
+				"error",
+				"always"
+			],
+			"operator-linebreak": [
+				"error",
+				"before"
+			],
+			"valid-jsdoc": [
+				"error",
+				{
+					"matchDescription": "^(?!\\[.*description\\])",
+					"requireParamDescription": false,
+					"requireReturnDescription": false,
+					"prefer": {
+						"arg": "param",
+						"argument": "param",
+						"returns": "return"
+					}
+				}
+			]
 		}
 	}
 }
