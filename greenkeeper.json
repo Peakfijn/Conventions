@@ -7,7 +7,7 @@
 		},
 		"changelog": {
 			"packages": [
-				"packages/conventional-changelog-peakfijn/package.json",
+				"packages/conventional-changelog-peakfijn/package.json"
 			]
 		},
 		"commitlint": {
