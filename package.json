@@ -3,11 +3,13 @@
 		"release": "lerna publish --exact",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
 		"test": "lerna run test",
-		"install": "lerna bootstrap --no-ci"
+		"install": "lerna bootstrap --no-ci",
+		"changelog": "conventional-changelog -p ./packages/conventional-changelog-peakfijn -i CHANGELOG.md -s -r 0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^7.1.2",
 		"@commitlint/travis-cli": "^7.1.2",
+		"conventional-changelog-cli": "^2.0.11",
 		"lerna": "^3.3.0"
 	},
 	"commitlint": {
@@ -15,7 +17,9 @@
 			"./packages/commitlint-config-peakfijn"
 		],
 		"rules": {
-			"scope-empty": [0],
+			"scope-empty": [
+				0
+			],
 			"scope-enum": [
 				2,
 				"always",
