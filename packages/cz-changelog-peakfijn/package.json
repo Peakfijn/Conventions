@@ -19,7 +19,7 @@
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
 	"scripts": {
-		"test": "node -c index.js"
+		"test": "ava"
 	},
 	"dependencies": {
 		"@commitlint/lint": "^7.0.0",
@@ -27,5 +27,9 @@
 		"chalk": "^2.4.1",
 		"commit-types-peakfijn": "0.8.3",
 		"commitlint-config-peakfijn": "0.8.3"
+	},
+	"devDependencies": {
+		"ava": "^1.0.1",
+		"lodash": "^4.17.11"
 	}
 }
