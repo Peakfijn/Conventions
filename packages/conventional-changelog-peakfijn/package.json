@@ -27,7 +27,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"commit-types-peakfijn": "1.0.0-rc.1",
+		"commit-types-peakfijn": "1.0.0-rc.2",
 		"conventional-changelog-angular": "^5.0.0",
 		"q": "^1.5.1"
 	},
