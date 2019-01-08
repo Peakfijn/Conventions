@@ -10,8 +10,8 @@ cache:
 before_install:
   - npm install -g npm@latest
 install:
-  - npm install
+  - npm ci
 script:
-  - npx lerna bootstrap --no-ci
+  - npx lerna bootstrap
   - npx lerna run test
   - npx commitlint-travis
