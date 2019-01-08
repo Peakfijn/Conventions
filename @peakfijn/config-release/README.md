@@ -1,4 +1,4 @@
-# Open Source - Peakfijn Releases
+# Basic - Peakfijn Releases
 
 A sharable [Semantic Releases](https://github.com/semantic-release/semantic-release) configuration for basic open source projects.
 
@@ -7,7 +7,7 @@ A sharable [Semantic Releases](https://github.com/semantic-release/semantic-rele
 Install the dependency with npm.
 
 ```bash
-$ npm install --save-dev @peakfijn/config-release-os
+$ npm install --save-dev @peakfijn/config-release
 ```
 
 ## Configuration
@@ -17,7 +17,7 @@ Update the `package.json` to include a [release](https://github.com/semantic-rel
 ```json
 {
 	"release": {
-		"extends": "@peakfijn/config-release-os"
+		"extends": "@peakfijn/config-release"
 	}
 }
 ```
