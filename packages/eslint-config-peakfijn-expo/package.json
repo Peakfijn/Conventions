@@ -27,7 +27,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"eslint-config-peakfijn": "1.0.0-rc.1"
+		"eslint-config-peakfijn": "1.0.0-rc.2"
 	},
 	"peerDependencies": {
 		"babel-eslint": "^9.0.0",
