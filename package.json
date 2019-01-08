@@ -1,10 +1,12 @@
 {
 	"scripts": {
-		"release": "lerna version",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
 		"test": "lerna run test",
 		"install": "lerna bootstrap",
-		"changelog": "conventional-changelog -p ./packages/conventional-changelog-peakfijn -i CHANGELOG.md -s -r 0"
+		"release": "npm run release-changelog && npm run release-version && npm run release-publish",
+		"release-changelog": "conventional-changelog -p ./packages/conventional-changelog-peakfijn -i CHANGELOG.md -s -r 0",
+		"release-publish": "lerna exec --bail=false -- npm publish --access public",
+		"release-version": "lerna version"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^7.1.2",
