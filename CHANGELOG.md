@@ -1,5 +1,17 @@
+## 1.0.0-rc.1 (2019-01-08)
+
+* refactor: fix all encountered xo issues ([630d859](https://bycedric.github.com/peakfijn/conventions/commit/630d859))
+* fix: greenkeeper json syntax issue ([940a0fd](https://bycedric.github.com/peakfijn/conventions/commit/940a0fd))
+* fix(commitlint): add missing execa dev dependency ([9f6cf29](https://bycedric.github.com/peakfijn/conventions/commit/9f6cf29))
+* feature: add xo with minor peakfijn changes ([f463436](https://bycedric.github.com/peakfijn/conventions/commit/f463436))
+* feature: implement xo in all packages ([36d6734](https://bycedric.github.com/peakfijn/conventions/commit/36d6734))
+
+
+
 ## 1.0.0-rc.0 (2019-01-07)
 
+* release: create new version v1.0.0-rc.0 ([dfb2381](https://bycedric.github.com/peakfijn/conventions/commit/dfb2381))
+* documentation: add changelog for upcoming release ([f8906d5](https://bycedric.github.com/peakfijn/conventions/commit/f8906d5))
 * fix: force lerna to install with `npm install` ([a389161](https://bycedric.github.com/peakfijn/conventions/commit/a389161))
 * fix: update lerna configuration ([2073c3f](https://bycedric.github.com/peakfijn/conventions/commit/2073c3f))
 * fix: whitelist all files within packages ([ee2e222](https://bycedric.github.com/peakfijn/conventions/commit/ee2e222))
