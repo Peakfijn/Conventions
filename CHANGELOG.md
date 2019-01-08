@@ -1,5 +1,17 @@
+## 1.0.0-rc.2 (2019-01-08)
+
+* release: create new version v1.0.0-rc.2 ([04e6590](https://bycedric.github.com/peakfijn/conventions/commit/04e6590))
+* pipeline: use `ci` instead of `install` ([27d7ed6](https://bycedric.github.com/peakfijn/conventions/commit/27d7ed6))
+* refactor: add lock files in attempt to speed up fresh installs ([1d82c14](https://bycedric.github.com/peakfijn/conventions/commit/1d82c14))
+* refactor: enable lockfiles in npmrc ([bf63623](https://bycedric.github.com/peakfijn/conventions/commit/bf63623))
+* refactor: remove `--no-ci` flag from lerna bootstrap ([3c5fbca](https://bycedric.github.com/peakfijn/conventions/commit/3c5fbca))
+
+
+
 ## 1.0.0-rc.1 (2019-01-08)
 
+* release: create new version v1.0.0-rc.1 ([dd7210b](https://bycedric.github.com/peakfijn/conventions/commit/dd7210b))
+* documentation: add changelog for upcoming release ([d99804f](https://bycedric.github.com/peakfijn/conventions/commit/d99804f))
 * refactor: fix all encountered xo issues ([630d859](https://bycedric.github.com/peakfijn/conventions/commit/630d859))
 * fix: greenkeeper json syntax issue ([940a0fd](https://bycedric.github.com/peakfijn/conventions/commit/940a0fd))
 * fix(commitlint): add missing execa dev dependency ([9f6cf29](https://bycedric.github.com/peakfijn/conventions/commit/9f6cf29))
