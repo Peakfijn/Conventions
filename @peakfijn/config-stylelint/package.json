@@ -32,7 +32,7 @@
 	"dependencies": {
 		"resolve-pkg": "^1.0.0",
 		"stylelint": "^9.5.0",
-		"stylelint-config-peakfijn": "1.0.0-rc.1"
+		"stylelint-config-peakfijn": "1.0.0-rc.2"
 	},
 	"devDependencies": {
 		"ava": "^1.0.1",
