@@ -13,7 +13,7 @@
 		"@commitlint/travis-cli": "^7.1.2",
 		"conventional-changelog-cli": "^2.0.11",
 		"lerna": "^3.8.5",
-		"xo": "^0.23.0"
+		"xo": "^0.24.0"
 	},
 	"commitlint": {
 		"extends": [
