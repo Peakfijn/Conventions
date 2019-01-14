@@ -35,7 +35,7 @@
 		"ava": "^1.0.1",
 		"conventional-commits-parser": "^3.0.1",
 		"lodash": "^4.17.11",
-		"xo": "^0.23.0"
+		"xo": "^0.24.0"
 	},
 	"xo": false
 }
