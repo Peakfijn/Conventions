@@ -34,7 +34,7 @@
 		"babel-eslint": "^9.0.0",
 		"eslint": "^5.5.0",
 		"eslint-config-peakfijn-expo": "1.0.0-rc.2",
-		"eslint-import-resolver-babel-module": "^4.0.0",
+		"eslint-import-resolver-babel-module": "^5.0.0",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jest": "^22.0.0",
 		"eslint-plugin-jsdoc": "^4.0.0",
