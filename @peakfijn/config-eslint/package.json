@@ -33,7 +33,7 @@
 		"eslint": "^5.5.0",
 		"eslint-config-peakfijn": "1.0.0-rc.2",
 		"eslint-plugin-import": "^2.14.0",
-		"eslint-plugin-jsdoc": "^4.0.0",
+		"eslint-plugin-jsdoc": "^4.1.0",
 		"eslint-plugin-jsx-a11y": "^6.1.1",
 		"eslint-plugin-react": "^7.11.1",
 		"resolve-pkg": "^1.0.0"
