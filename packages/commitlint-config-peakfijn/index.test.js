@@ -25,10 +25,10 @@ test('scope-empty is defined as an error and always applicable', t => {
 	));
 });
 
-test('subject-min-length is defined as error, always applicable and set to 20 characters', t => {
+test('subject-min-length is defined as error, always applicable and set to 15 characters', t => {
 	t.true(isEqual(
 		rules['subject-min-length'],
-		[2, 'always', 20],
+		[2, 'always', 15],
 	));
 });
 
