@@ -4,6 +4,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
+package-lock.json
 
 # lerna
 lerna-debug.log*
