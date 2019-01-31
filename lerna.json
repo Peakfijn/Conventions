@@ -6,9 +6,6 @@
 	],
 	"version": "1.0.0-rc.2",
 	"command": {
-		"bootstrap": {
-			"noCi": true
-		},
 		"version": {
 			"allowBranch": "master",
 			"exact": true,
