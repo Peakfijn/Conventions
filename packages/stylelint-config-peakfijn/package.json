@@ -30,7 +30,7 @@
 		"stylelint-config-standard": "^18.2.0"
 	},
 	"devDependencies": {
-		"ava": "^1.0.1",
+		"ava": "^1.2.0",
 		"lodash": "^4.17.11",
 		"xo": "^0.24.0"
 	},
