@@ -2,7 +2,7 @@
 	"scripts": {
 		"publish": "lerna exec --bail=false -- npm publish --access public",
 		"test": "lerna run test",
-		"install": "lerna bootstrap",
+		"install": "lerna bootstrap --no-ci",
 		"release": "npm run release-changelog && npm run release-version && npm run release-publish",
 		"release-changelog": "conventional-changelog -p ./packages/conventional-changelog-peakfijn -i CHANGELOG.md -s -r 0",
 		"release-publish": "lerna exec --bail=false -- npm publish --access public",
