@@ -7,11 +7,9 @@ node_js:
 cache:
   directories:
     - ~/.npm
-before_install:
-  - npm install -g npm@latest
 install:
-  - npm ci
+  - npm install
+  - npm audit
 script:
-  - npx lerna bootstrap
-  - npx lerna run test
   - npx commitlint-travis
+  - npm test
