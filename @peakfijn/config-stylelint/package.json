@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-stylelint",
-	"version": "1.0.0-rc.2",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for Stylelint with Peakfijn conventions",
 	"keywords": [
 		"stylelint",
@@ -32,7 +32,7 @@
 	"dependencies": {
 		"resolve-pkg": "^1.0.0",
 		"stylelint": "^9.5.0",
-		"stylelint-config-peakfijn": "1.0.0-rc.2"
+		"stylelint-config-peakfijn": "1.0.0-rc.3"
 	},
 	"devDependencies": {
 		"ava": "^1.2.0",
