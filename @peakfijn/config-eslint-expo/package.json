@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-eslint-expo",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for ESLint with Peakfijn conventions for Expo",
 	"keywords": [
 		"eslint",
@@ -11,6 +11,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"eslint": "./bin/eslint"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-eslint-expo#readme",
 	"repository": {
 		"type": "git",
@@ -19,19 +22,32 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"bin/eslint"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
 		"babel-eslint": "^9.0.0",
 		"eslint": "^5.5.0",
-		"eslint-config-peakfijn": "0.8.0",
-		"eslint-config-peakfijn-expo": "0.8.0",
-		"eslint-import-resolver-babel-module": "^4.0.0",
-		"eslint-plugin-import": "^2.14.0",
-		"eslint-plugin-jest": "^21.22.0",
-		"eslint-plugin-jsdoc": "^3.8.0",
-		"eslint-plugin-jsx-a11y": "^6.1.1",
-		"eslint-plugin-react": "^7.11.1"
-	}
+		"eslint-config-peakfijn-expo": "1.0.0-rc.3",
+		"eslint-import-resolver-babel-module": "^5.0.1",
+		"eslint-plugin-import": "^2.16.0",
+		"eslint-plugin-jest": "^22.2.1",
+		"eslint-plugin-jsdoc": "^4.1.0",
+		"eslint-plugin-jsx-a11y": "^6.2.0",
+		"eslint-plugin-react": "^7.11.1",
+		"resolve-pkg": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11",
+		"semver": "^5.6.0",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

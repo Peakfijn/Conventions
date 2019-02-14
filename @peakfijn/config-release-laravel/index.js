@@ -1,6 +1,6 @@
 module.exports = {
 	branch: 'develop',
-	tagFormat: '${version}',
+	tagFormat: '${version}', // eslint-disable-line no-template-curly-in-string
 	analyzeCommits: {
 		path: '@semantic-release/commit-analyzer',
 		preset: 'peakfijn',
@@ -27,6 +27,7 @@ module.exports = {
 			path: 'semantic-release-git-branches',
 			branchPush: true,
 			branchMerges: ['develop', 'master'],
+			// eslint-disable-next-line no-template-curly-in-string
 			message: 'release: create new version ${nextRelease.version}\n\n${nextRelease.notes}',
 			assets: [
 				'CHANGELOG.md',

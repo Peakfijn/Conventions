@@ -2,61 +2,51 @@
 	"feature": {
 		"release": "minor",
 		"name": "New features",
-		"summary": "Creating a feature in business logic",
-		"description": "TODO: feature description"
+		"summary": "Creating a feature in business logic"
 	},
 	"fix": {
 		"release": "patch",
 		"name": "Bug fixes",
-		"summary": "Fixing an issue in business logic",
-		"description": "TODO: fix description"
+		"summary": "Fixing an issue in business logic"
 	},
 	"test": {
 		"release": "patch",
 		"name": "Testing updates",
-		"summary": "Modifying a test in business logic",
-		"description": "TODO: test description"
+		"summary": "Modifying a test in business logic"
 	},
 	"performance": {
 		"release": "patch",
 		"name": "Performance improvements",
-		"summary": "Improving the performance of business logic",
-		"description": "TODO: performance description"
+		"summary": "Improving the performance of business logic"
 	},
 	"documentation": {
 		"release": "patch",
 		"name": "Documentation changes",
-		"summary": "Adding new or modifying existing documentation anywhere",
-		"description": "TODO: documentation description"
+		"summary": "Adding new or modifying existing documentation anywhere"
 	},
 	"pipeline": {
 		"release": null,
 		"name": "Pipeline changes",
-		"summary": "Changing behavior within the automated environment",
-		"description": "TODO: pipeline description"
+		"summary": "Changing behavior within the automated environment"
 	},
 	"style": {
 		"release": null,
 		"name": "Code style changes",
-		"summary": "Updating code without changing the meaning of it",
-		"description": "TODO: style description"
+		"summary": "Updating code without changing the meaning of it"
 	},
 	"refactor": {
 		"release": "patch",
 		"name": "Code refactors",
-		"summary": "Updating code and changing the meaning of it",
-		"description": "TODO: refactor description"
+		"summary": "Updating code and changing the meaning of it"
 	},
 	"release": {
 		"release": null,
 		"name": "Releases",
-		"summary": "Modifying all files required to define a new release version",
-		"description": "TODO: release description"
+		"summary": "Modifying all files required to define a new release version"
 	},
 	"chore": {
 		"release": "patch",
 		"name": "Other chores",
-		"summary": "Anything that does not belong to a previous type",
-		"description": "TODO: chore description"
+		"summary": "Anything that does not belong to a previous type"
 	}
 }

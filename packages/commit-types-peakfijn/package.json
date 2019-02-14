@@ -1,6 +1,6 @@
 {
 	"name": "commit-types-peakfijn",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "All commit types used by Peakfijn conventions",
 	"keywords": [
 		"commit",
@@ -18,10 +18,17 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.json"
+	],
 	"scripts": {
-		"test": "json -f index.json"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"devDependencies": {
-		"json": "^9.0.6"
-	}
+		"ava": "^1.2.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

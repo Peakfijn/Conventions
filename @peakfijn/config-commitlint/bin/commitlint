@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const path = require('path');
+const resolvePkg = require('resolve-pkg');
+
+const directory = resolvePkg('commitlint', { cwd: __dirname });
+const manifest = require(path.resolve(directory, 'package.json'));
+const bin = path.resolve(directory, manifest.bin.commitlint);
+
+require(bin);

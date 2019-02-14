@@ -1,6 +1,6 @@
 {
 	"name": "commitlint-config-peakfijn",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "A commitlint configuration for Peakfijn conventions",
 	"keywords": [
 		"commitlint",
@@ -9,19 +9,29 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
-	"homepage": "https://github.com/peakfijn/peakfijn-conventions/tree/develop/packages/commitlint-config-peakfijn#readme",
+	"homepage": "https://github.com/peakfijn/conventions/tree/develop/packages/commitlint-config-peakfijn#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/peakfijn/peakfijn-conventions.git"
+		"url": "git+https://github.com/peakfijn/conventions.git"
 	},
 	"bugs": {
-		"url": "https://github.com/peakfijn/peakfijn-conventions/issues"
+		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^7.0.0",
-		"commit-types-peakfijn": "0.8.0"
-	}
+		"@commitlint/config-conventional": "^7.3.1",
+		"commit-types-peakfijn": "1.0.0-rc.3"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

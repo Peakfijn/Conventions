@@ -1,6 +1,6 @@
 {
 	"name": "stylelint-config-peakfijn",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for Stylelint with Peakfijn conventions",
 	"keywords": [
 		"stylelint",
@@ -18,12 +18,21 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
 		"stylelint-config-concentric-order": "^3.4.0",
-		"stylelint-config-recommended": "^2.1.0",
 		"stylelint-config-standard": "^18.2.0"
-	}
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

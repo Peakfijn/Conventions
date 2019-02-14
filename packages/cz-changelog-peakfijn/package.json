@@ -1,6 +1,6 @@
 {
 	"name": "cz-changelog-peakfijn",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "A commitizen cz-cli adapter for Peakfijn conventions",
 	"keywords": [
 		"commitizen",
@@ -18,14 +18,27 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"commitlint-utils.js",
+		"get-scopes.js",
+		"get-types.js",
+		"index.js"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
-		"@commitlint/lint": "^7.0.0",
+		"@commitlint/lint": "^7.4.0",
 		"@commitlint/load": "^7.0.0",
 		"chalk": "^2.4.1",
-		"commit-types-peakfijn": "0.8.0",
-		"commitlint-config-peakfijn": "0.8.0"
-	}
+		"commit-types-peakfijn": "1.0.0-rc.3",
+		"commitlint-config-peakfijn": "1.0.0-rc.3"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

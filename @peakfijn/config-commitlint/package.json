@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-commitlint",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for Commitlint with Peakfijn conventions",
 	"keywords": [
 		"commitlint",
@@ -10,6 +10,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"commitlint": "./bin/commitlint"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-commitlint#readme",
 	"repository": {
 		"type": "git",
@@ -18,11 +21,25 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"bin/commitlint"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
-		"commitlint": "^7.1.2",
-		"commitlint-config-peakfijn": "0.8.0"
-	}
+		"commitlint": "^7.4.0",
+		"commitlint-config-peakfijn": "1.0.0-rc.3",
+		"resolve-pkg": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11",
+		"semver": "^5.6.0",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

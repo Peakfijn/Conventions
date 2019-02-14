@@ -1,28 +1,52 @@
-'use strict';
-
 const commitTypes = require('commit-types-peakfijn');
-const { getRule } = require('./commitlint-utils');
+const { getRule, ruleIsEnabled } = require('./commitlint-utils');
 
-module.exports = function getTypes(commitlint = {}) {
-	const typesAllowed = getRule(commitlint, 'type-enum').value;
+function getTypeSummary(type) {
+	const info = commitTypes[type];
 
-	let types = Object.keys(commitTypes);
-
-	if (typesAllowed.length > 0) {
-		types = types.filter(function (type) {
-			return typesAllowed.indexOf(type) >= 0;
-		});
+	if (info && info.summary) {
+		return info.summary;
 	}
 
-	const maxLength = types.reduce((carry, type) => type.length > carry ? type.length : carry, 0);
+	return '';
+}
+
+function sortTypeEnums(types) {
+	const peakfijnTypes = Object.keys(commitTypes);
+
+	return types.sort((a, b) => {
+		const aIndex = peakfijnTypes.indexOf(a);
+		const bIndex = peakfijnTypes.indexOf(b);
+
+		if (aIndex >= 0 && bIndex >= 0) {
+			return aIndex - bIndex;
+		}
+
+		if (aIndex >= 0 && bIndex < 0) {
+			return -1;
+		}
+
+		if (aIndex < 0 && bIndex >= 0) {
+			return 1;
+		}
+
+		return 0;
+	});
+}
+
+module.exports = (commitlint = {}) => {
+	const typeRule = getRule(commitlint, 'type-enum');
+	const typeEnums = sortTypeEnums(typeRule.value || []);
+
+	const maxLength = typeEnums.reduce((carry, type) => type.length > carry ? type.length : carry, 0);
 
 	return {
-		enabled: true,
-		maxLength: maxLength,
-		choices: types.map(type => ({
+		maxLength,
+		enabled: ruleIsEnabled(typeRule),
+		choices: typeEnums.map(type => ({
 			value: type,
 			short: type,
-			name: `${type.padEnd(maxLength)} ${commitTypes[type].summary}`,
+			name: `${type.padEnd(maxLength)} ${getTypeSummary(type)}`.trim(),
 		})),
 	};
 };

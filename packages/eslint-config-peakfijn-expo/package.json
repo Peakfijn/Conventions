@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-peakfijn-expo",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for ESLint with Expo using Peakfijn conventions",
 	"keywords": [
 		"eslint",
@@ -19,12 +19,25 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
+	},
+	"dependencies": {
+		"eslint-config-peakfijn": "1.0.0-rc.3"
 	},
 	"peerDependencies": {
 		"babel-eslint": "^9.0.0",
-		"eslint-import-resolver-babel-module": "^4.0.0",
-		"eslint-plugin-jest": "^21.22.0"
-	}
+		"eslint-import-resolver-babel-module": "^5.0.1",
+		"eslint-plugin-jest": "^22.2.1"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

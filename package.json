@@ -1,13 +1,42 @@
 {
 	"scripts": {
-		"release": "lerna publish --exact",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
-		"test": "lerna run test"
+		"test": "lerna run test",
+		"install": "lerna bootstrap --no-ci",
+		"release": "npm run release-changelog && npm run release-version && npm run release-publish",
+		"release-changelog": "conventional-changelog -p ./packages/conventional-changelog-peakfijn -i CHANGELOG.md -s -r 0",
+		"release-publish": "lerna exec --bail=false -- npm publish --access public",
+		"release-version": "lerna version"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^7.1.2",
-		"@commitlint/travis-cli": "^7.1.2",
-		"lerna": "^3.3.0"
+		"@commitlint/cli": "^7.3.2",
+		"@commitlint/travis-cli": "^7.2.1",
+		"conventional-changelog-cli": "^2.0.11",
+		"lerna": "^3.8.5",
+		"xo": "^0.24.0"
+	},
+	"commitlint": {
+		"extends": [
+			"./packages/commitlint-config-peakfijn"
+		],
+		"rules": {
+			"scope-empty": [
+				0
+			],
+			"scope-enum": [
+				2,
+				"always",
+				[
+					"changelog",
+					"commitizen",
+					"commitlint",
+					"eslint",
+					"package",
+					"semantic-release",
+					"stylelint"
+				]
+			]
+		}
 	},
 	"greenkeeper": {
 		"commitMessages": {
@@ -18,6 +47,41 @@
 			"devDependencyUpdate": "refactor: upgrade ${dependency} to version ${version}",
 			"dependencyPin": "fix: freeze ${dependency} to ${oldVersion}",
 			"devDependencyPin": "fix: freeze ${dependency} to ${oldVersion}"
+		}
+	},
+	"xo": {
+		"rules": {
+			"comma-dangle": [
+				"error",
+				{
+					"arrays": "always-multiline",
+					"objects": "always-multiline",
+					"imports": "always-multiline",
+					"exports": "always-multiline",
+					"functions": "always-multiline"
+				}
+			],
+			"object-curly-spacing": [
+				"error",
+				"always"
+			],
+			"operator-linebreak": [
+				"error",
+				"before"
+			],
+			"valid-jsdoc": [
+				"error",
+				{
+					"matchDescription": "^(?!\\[.*description\\])",
+					"requireParamDescription": false,
+					"requireReturnDescription": false,
+					"prefer": {
+						"arg": "param",
+						"argument": "param",
+						"returns": "return"
+					}
+				}
+			]
 		}
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"name": "conventional-changelog-peakfijn",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "A conventional changelog preset for Peakfijn conventions",
 	"keywords": [
 		"conventional",
@@ -18,12 +18,24 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"writer-opts.js"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
-		"commit-types-peakfijn": "0.8.0",
+		"commit-types-peakfijn": "1.0.0-rc.3",
 		"conventional-changelog-angular": "^5.0.0",
 		"q": "^1.5.1"
-	}
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"conventional-commits-parser": "^3.0.1",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

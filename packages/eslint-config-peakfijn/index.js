@@ -4,7 +4,7 @@ module.exports = {
 		'jsdoc',
 	],
 	rules: {
-		'indent': ['error', 'tab', { SwitchCase: 1 }],
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'jsdoc/check-param-names': 'error',
 		'jsdoc/check-types': 'error',
 		'jsdoc/newline-after-description': 'error',
@@ -20,7 +20,7 @@ module.exports = {
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
 		'valid-jsdoc': ['error', {
-			matchDescription: '^(?!(\[(.+)?description\]))',
+			matchDescription: '^(?!\\[.*description\\])',
 			requireParamDescription: false,
 			requireReturnDescription: false,
 			prefer: {

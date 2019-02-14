@@ -1,3 +1,1 @@
-const config = require('cz-changelog-peakfijn');
-
-module.exports = config;
+module.exports = require('cz-changelog-peakfijn');

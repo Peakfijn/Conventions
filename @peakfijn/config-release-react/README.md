@@ -42,3 +42,7 @@ After installing and configuring the package, you can use it by running this com
 ```bash
 $ npx semantic-release
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

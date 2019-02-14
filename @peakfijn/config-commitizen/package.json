@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-commitizen",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for Commitizen with Peakfijn conventions",
 	"keywords": [
 		"commitizen",
@@ -10,6 +10,10 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"commitizen": "./bin/commitizen",
+		"git-cz": "./bin/git-cz"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-commitizen#readme",
 	"repository": {
 		"type": "git",
@@ -18,11 +22,26 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"bin/commitizen",
+		"bin/git-cz"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
-		"commitizen": "^2.10.1",
-		"cz-changelog-peakfijn": "0.8.0"
-	}
+		"commitizen": "^3.0.3",
+		"cz-changelog-peakfijn": "1.0.0-rc.3",
+		"execa": "^1.0.0",
+		"resolve-pkg": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

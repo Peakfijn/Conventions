@@ -4,9 +4,9 @@
 		"@peakfijn/*",
 		"packages/*"
 	],
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"command": {
-		"publish": {
+		"version": {
 			"allowBranch": "master",
 			"exact": true,
 			"force-publish": "*",

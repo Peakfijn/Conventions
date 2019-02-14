@@ -1,0 +1,54 @@
+{
+	"name": "@peakfijn/config-release",
+	"version": "1.0.0-rc.3",
+	"description": "Sharable configuration for Semantic Releases with basic open source projects",
+	"keywords": [
+		"semantic",
+		"release",
+		"config",
+		"open",
+		"source",
+		"peakfijn"
+	],
+	"author": "Cedric van Putten <cedric@peakfijn.nl>",
+	"license": "MIT",
+	"main": "index.js",
+	"bin": {
+		"semantic-release": "./bin/semantic-release"
+	},
+	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-release#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peakfijn/conventions.git"
+	},
+	"bugs": {
+		"url": "https://github.com/peakfijn/conventions/issues"
+	},
+	"files": [
+		"index.js",
+		"bin/semantic-release"
+	],
+	"scripts": {
+		"pretest": "xo",
+		"test": "ava"
+	},
+	"dependencies": {
+		"@semantic-release/changelog": "^3.0.2",
+		"@semantic-release/commit-analyzer": "^6.1.0",
+		"@semantic-release/git": "^7.0.7",
+		"@semantic-release/github": "^5.2.8",
+		"@semantic-release/npm": "^5.1.3",
+		"@semantic-release/release-notes-generator": "^7.1.4",
+		"conventional-changelog-peakfijn": "1.0.0-rc.3",
+		"release-rules-peakfijn": "1.0.0-rc.3",
+		"resolve-pkg": "^1.0.0",
+		"semantic-release": "^15.13.2"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
+}

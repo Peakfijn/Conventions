@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-peakfijn",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for ESLint with Peakfijn conventions",
 	"keywords": [
 		"eslint",
@@ -18,13 +18,23 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
 		"eslint-config-airbnb": "^17.1.0"
 	},
 	"peerDependencies": {
-		"eslint-plugin-jsdoc": "^3.8.0"
-	}
+		"eslint-plugin-jsdoc": "^4.1.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }

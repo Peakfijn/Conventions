@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-release-laravel",
-	"version": "0.8.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for Semantic Releases with Laravel",
 	"keywords": [
 		"semantic",
@@ -12,6 +12,9 @@
 	"author": "Cedric van Putten <cedric@peakfijn.nl>",
 	"license": "MIT",
 	"main": "index.js",
+	"bin": {
+		"semantic-release": "./bin/semantic-release"
+	},
 	"homepage": "https://github.com/peakfijn/conventions/tree/develop/@peakfijn/config-release-laravel#readme",
 	"repository": {
 		"type": "git",
@@ -20,17 +23,30 @@
 	"bugs": {
 		"url": "https://github.com/peakfijn/conventions/issues"
 	},
+	"files": [
+		"index.js",
+		"bin/semantic-release"
+	],
 	"scripts": {
-		"test": "node -c index.js"
+		"pretest": "xo",
+		"test": "ava"
 	},
 	"dependencies": {
 		"@semantic-release/changelog": "^3.0.0",
 		"@semantic-release/commit-analyzer": "^6.0.0",
 		"@semantic-release/npm": "^5.0.1",
 		"@semantic-release/release-notes-generator": "^7.0.0",
-		"conventional-changelog-peakfijn": "0.8.0",
-		"release-rules-peakfijn": "0.8.0",
+		"conventional-changelog-peakfijn": "1.0.0-rc.3",
+		"release-rules-peakfijn": "1.0.0-rc.3",
+		"resolve-pkg": "^1.0.0",
 		"semantic-release": "^15.9.5",
 		"semantic-release-git-branches": "^1.2.1"
-	}
+	},
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"execa": "^1.0.0",
+		"lodash": "^4.17.11",
+		"xo": "^0.24.0"
+	},
+	"xo": false
 }
