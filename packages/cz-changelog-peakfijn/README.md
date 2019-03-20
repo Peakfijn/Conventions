@@ -45,7 +45,7 @@ After installing the configuration, you need to update the `package.json` to inc
 {
     "config": {
         "commitizen": {
-            "path": "cz-chagelog-peakfijn"
+            "path": "cz-changelog-peakfijn"
         }
     }
 }
