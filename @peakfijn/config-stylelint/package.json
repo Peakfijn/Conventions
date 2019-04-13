@@ -31,7 +31,7 @@
 	},
 	"dependencies": {
 		"resolve-pkg": "^1.0.0",
-		"stylelint": "^9.5.0",
+		"stylelint": "^10.0.0",
 		"stylelint-config-peakfijn": "1.0.0-rc.3"
 	},
 	"devDependencies": {
