@@ -9,7 +9,7 @@ cache:
     - ~/.npm
 install:
   - npm install
-  - npm audit
+  - npm audit || echo 'Make it unblocking awaiting tar/node-gyp fix'
 script:
   - npx commitlint-travis
   - npm test
