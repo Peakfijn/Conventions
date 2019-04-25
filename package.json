@@ -3,6 +3,13 @@
 	"version": "0.0.0",
 	"name": "peakfijn-conventions",
 	"description": "A set of packages and configuration for Peakfijn development conventions",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/peakfijn/conventions.git"
+	},
+	"bugs": {
+		"url": "https://github.com/peakfijn/conventions/issues"
+	},
 	"scripts": {
 		"postinstall": "lerna bootstrap",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
