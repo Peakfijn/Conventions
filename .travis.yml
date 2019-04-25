@@ -8,9 +8,11 @@ node_js:
 cache:
   directories:
     - ~/.npm
+before_install:
+  - npm install --global npm@latest
 install:
-  - npm install
   - npm audit || echo 'Make it unblocking awaiting tar/node-gyp fix'
+  - npm ci
 script:
   - npx commitlint-travis
   - npm test
