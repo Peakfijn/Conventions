@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-stylelint",
-	"version": "1.0.0",
+	"version": "1.0.0-rc.3",
 	"description": "Sharable configuration for Stylelint with Peakfijn conventions",
 	"keywords": [
 		"stylelint",
