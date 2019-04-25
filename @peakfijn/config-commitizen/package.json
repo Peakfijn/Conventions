@@ -35,7 +35,7 @@
 		"commitizen": "^3.0.3",
 		"cz-changelog-peakfijn": "1.0.0-rc.3",
 		"execa": "^1.0.0",
-		"resolve-pkg": "^1.0.0"
+		"resolve-pkg": "^2.0.0"
 	},
 	"devDependencies": {
 		"ava": "^1.2.0",
