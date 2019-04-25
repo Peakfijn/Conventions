@@ -1,4 +1,8 @@
 {
+	"private": true,
+	"version": "0.0.0",
+	"name": "peakfijn-conventions",
+	"description": "A set of packages and configuration for Peakfijn development conventions",
 	"scripts": {
 		"postinstall": "lerna bootstrap",
 		"publish": "lerna exec --bail=false -- npm publish --access public",
