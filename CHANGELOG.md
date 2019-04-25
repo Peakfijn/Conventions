@@ -1,5 +1,34 @@
+## 1.0.0 (2019-04-25)
+
+* chore: add missing repository and bugs url to package file (#143) ([5ad5c5f](https://github.com/peakfijn/conventions/commit/5ad5c5f)), closes [#143](https://github.com/peakfijn/conventions/issues/143)
+* chore: add package lock files to repository (#141) ([379a4c2](https://github.com/peakfijn/conventions/commit/379a4c2)), closes [#141](https://github.com/peakfijn/conventions/issues/141)
+* chore: bump packages for config-release-react (#112) ([688622c](https://github.com/peakfijn/conventions/commit/688622c)), closes [#112](https://github.com/peakfijn/conventions/issues/112)
+* chore: configure pull request titles for greenkeeper ([11e9d30](https://github.com/peakfijn/conventions/commit/11e9d30))
+* pipeline: add node 12 to testing languages ([59fc48a](https://github.com/peakfijn/conventions/commit/59fc48a))
+* pipeline: enable greenkeeper with updated config (#140) ([027a07b](https://github.com/peakfijn/conventions/commit/027a07b)), closes [#140](https://github.com/peakfijn/conventions/issues/140)
+* pipeline: remove node 11 from test versions (#142) ([b286f4a](https://github.com/peakfijn/conventions/commit/b286f4a)), closes [#142](https://github.com/peakfijn/conventions/issues/142)
+* pipeline: temporary disable audit-block awaiting tar/node-gyp fix (#130) ([0f904f3](https://github.com/peakfijn/conventions/commit/0f904f3)), closes [#130](https://github.com/peakfijn/conventions/issues/130)
+* documentation: use proper url of the repository in changelog ([6276e92](https://github.com/peakfijn/conventions/commit/6276e92))
+* documentation(commitizen): correct typo in example config (#114) ([8e2a0d1](https://github.com/peakfijn/conventions/commit/8e2a0d1)), closes [#114](https://github.com/peakfijn/conventions/issues/114)
+* refactor(commitizen): upgrade resolve-pkg to version 2.0.0 (#138) ([7090a8b](https://github.com/peakfijn/conventions/commit/7090a8b)), closes [#138](https://github.com/peakfijn/conventions/issues/138)
+* refactor(commitlint): upgrade resolve-pkg to version 2.0.0 (#136) ([00c2306](https://github.com/peakfijn/conventions/commit/00c2306)), closes [#136](https://github.com/peakfijn/conventions/issues/136)
+* refactor(commitlint): upgrade semver to version 6.0.0 (#115) ([0e10210](https://github.com/peakfijn/conventions/commit/0e10210)), closes [#115](https://github.com/peakfijn/conventions/issues/115)
+* refactor(eslint): upgrade babel-eslint to version 10.0.1 (#137) ([919d5c5](https://github.com/peakfijn/conventions/commit/919d5c5)), closes [#137](https://github.com/peakfijn/conventions/issues/137)
+* refactor(eslint): upgrade resolve-pkg to version 2.0.0 (#134) ([9ce4a6a](https://github.com/peakfijn/conventions/commit/9ce4a6a)), closes [#134](https://github.com/peakfijn/conventions/issues/134)
+* refactor(eslint): upgrade semver to version 6.0.0 (#116) ([5792e7a](https://github.com/peakfijn/conventions/commit/5792e7a)), closes [#116](https://github.com/peakfijn/conventions/issues/116)
+* refactor(semantic-release): upgrade resolve-pkg to version 2.0.0 (#139) ([51fb9f9](https://github.com/peakfijn/conventions/commit/51fb9f9)), closes [#139](https://github.com/peakfijn/conventions/issues/139)
+* refactor(stylelint): upgrade resolve-pkg to version 2.0.0 (#133) ([951a87b](https://github.com/peakfijn/conventions/commit/951a87b)), closes [#133](https://github.com/peakfijn/conventions/issues/133)
+* refactor(stylelint): upgrade semver to version 6.0.0 (#117) ([b6e7dce](https://github.com/peakfijn/conventions/commit/b6e7dce)), closes [#117](https://github.com/peakfijn/conventions/issues/117)
+* refactor(stylelint): upgrade stylelint to version 10.0.1 (#135) ([9773b05](https://github.com/peakfijn/conventions/commit/9773b05)), closes [#135](https://github.com/peakfijn/conventions/issues/135)
+
+
+
 ## 1.0.0-rc.3 (2019-02-03)
 
+* release: create new version v1.0.0-rc.3 ([b025feb](https://github.com/peakfijn/conventions/commit/b025feb))
+* documentation: add changelog for upcoming release ([21258ef](https://github.com/peakfijn/conventions/commit/21258ef))
+* documentation: add changelog for upcoming release ([cde2876](https://github.com/peakfijn/conventions/commit/cde2876))
+* documentation(semantic-release): rename `config-release-os` to `config-release` ([1f99833](https://github.com/peakfijn/conventions/commit/1f99833))
 * fix(eslint): remove old lock file ([4dd2155](https://github.com/peakfijn/conventions/commit/4dd2155))
 * refactor: add package as scope for greenkeeper ([76bd6da](https://github.com/peakfijn/conventions/commit/76bd6da))
 * refactor: clean up lerna configuration ([1fb8e49](https://github.com/peakfijn/conventions/commit/1fb8e49))
@@ -32,8 +61,6 @@
 * refactor(stylelint): upgrade ava to version 1.2.0 (#95) ([193d09b](https://github.com/peakfijn/conventions/commit/193d09b)), closes [#95](https://github.com/peakfijn/conventions/issues/95)
 * refactor(stylelint): upgrade xo to version 0.24.0 (#81) ([3856d74](https://github.com/peakfijn/conventions/commit/3856d74)), closes [#81](https://github.com/peakfijn/conventions/issues/81)
 * pipeline: remove lock files and update pipelines (#93) ([38e91c2](https://github.com/peakfijn/conventions/commit/38e91c2)), closes [#93](https://github.com/peakfijn/conventions/issues/93)
-* documentation: add changelog for upcoming release ([cde2876](https://github.com/peakfijn/conventions/commit/cde2876))
-* documentation(semantic-release): rename `config-release-os` to `config-release` ([1f99833](https://github.com/peakfijn/conventions/commit/1f99833))
 
 
 
