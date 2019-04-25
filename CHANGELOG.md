@@ -1,5 +1,15 @@
+## 1.0.1 (2019-04-25)
+
+* documentation: move badges over to shields and make them bigger ([0fa47bb](https://github.com/peakfijn/conventions/commit/0fa47bb))
+
+
+
 ## 1.0.0 (2019-04-25)
 
+* release: create new version v1.0.0 ([a5316c8](https://github.com/peakfijn/conventions/commit/a5316c8))
+* documentation: add changelog for upcoming release ([8d338ea](https://github.com/peakfijn/conventions/commit/8d338ea))
+* documentation: use proper url of the repository in changelog ([6276e92](https://github.com/peakfijn/conventions/commit/6276e92))
+* documentation(commitizen): correct typo in example config (#114) ([8e2a0d1](https://github.com/peakfijn/conventions/commit/8e2a0d1)), closes [#114](https://github.com/peakfijn/conventions/issues/114)
 * chore: add missing repository and bugs url to package file (#143) ([5ad5c5f](https://github.com/peakfijn/conventions/commit/5ad5c5f)), closes [#143](https://github.com/peakfijn/conventions/issues/143)
 * chore: add package lock files to repository (#141) ([379a4c2](https://github.com/peakfijn/conventions/commit/379a4c2)), closes [#141](https://github.com/peakfijn/conventions/issues/141)
 * chore: bump packages for config-release-react (#112) ([688622c](https://github.com/peakfijn/conventions/commit/688622c)), closes [#112](https://github.com/peakfijn/conventions/issues/112)
@@ -8,8 +18,6 @@
 * pipeline: enable greenkeeper with updated config (#140) ([027a07b](https://github.com/peakfijn/conventions/commit/027a07b)), closes [#140](https://github.com/peakfijn/conventions/issues/140)
 * pipeline: remove node 11 from test versions (#142) ([b286f4a](https://github.com/peakfijn/conventions/commit/b286f4a)), closes [#142](https://github.com/peakfijn/conventions/issues/142)
 * pipeline: temporary disable audit-block awaiting tar/node-gyp fix (#130) ([0f904f3](https://github.com/peakfijn/conventions/commit/0f904f3)), closes [#130](https://github.com/peakfijn/conventions/issues/130)
-* documentation: use proper url of the repository in changelog ([6276e92](https://github.com/peakfijn/conventions/commit/6276e92))
-* documentation(commitizen): correct typo in example config (#114) ([8e2a0d1](https://github.com/peakfijn/conventions/commit/8e2a0d1)), closes [#114](https://github.com/peakfijn/conventions/issues/114)
 * refactor(commitizen): upgrade resolve-pkg to version 2.0.0 (#138) ([7090a8b](https://github.com/peakfijn/conventions/commit/7090a8b)), closes [#138](https://github.com/peakfijn/conventions/issues/138)
 * refactor(commitlint): upgrade resolve-pkg to version 2.0.0 (#136) ([00c2306](https://github.com/peakfijn/conventions/commit/00c2306)), closes [#136](https://github.com/peakfijn/conventions/issues/136)
 * refactor(commitlint): upgrade semver to version 6.0.0 (#115) ([0e10210](https://github.com/peakfijn/conventions/commit/0e10210)), closes [#115](https://github.com/peakfijn/conventions/issues/115)
