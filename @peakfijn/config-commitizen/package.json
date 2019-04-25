@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-commitizen",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Sharable configuration for Commitizen with Peakfijn conventions",
 	"keywords": [
 		"commitizen",
@@ -33,7 +33,7 @@
 	},
 	"dependencies": {
 		"commitizen": "^3.0.3",
-		"cz-changelog-peakfijn": "1.0.0",
+		"cz-changelog-peakfijn": "1.0.1",
 		"execa": "^1.0.0",
 		"resolve-pkg": "^2.0.0"
 	},
