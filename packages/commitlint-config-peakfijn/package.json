@@ -25,7 +25,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^7.3.1",
+		"@commitlint/config-conventional": "^7.6.0",
 		"commit-types-peakfijn": "1.0.1"
 	},
 	"devDependencies": {
