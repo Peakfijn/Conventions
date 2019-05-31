@@ -29,7 +29,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"@commitlint/lint": "^7.4.0",
+		"@commitlint/lint": "^8.0.0",
 		"@commitlint/load": "^7.0.0",
 		"chalk": "^2.4.1",
 		"commit-types-peakfijn": "1.0.1",
