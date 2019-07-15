@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"@commitlint/lint": "^8.1.0",
-		"@commitlint/load": "^7.0.0",
+		"@commitlint/load": "^8.1.0",
 		"chalk": "^2.4.1",
 		"commit-types-peakfijn": "1.0.1",
 		"commitlint-config-peakfijn": "1.0.1"
