@@ -10,7 +10,7 @@ cache:
 before_install:
   - npm install --global npm@latest
 install:
-  - npm audit || echo 'Make it unblocking awaiting tar/node-gyp fix'
+  - npm audit
   - npm ci
 script:
   - npx commitlint-travis
