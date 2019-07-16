@@ -1,3 +1,14 @@
+## 2.0.0 (2019-07-16)
+
+* release: create new version v2.0.0 ([8d0d70c](https://github.com/peakfijn/conventions/commit/8d0d70cc09099ea9680c0665913d330a467834c8))
+* pipeline: enable audit step in install again (#179) ([62d57ff](https://github.com/peakfijn/conventions/commit/62d57ff4bacb4c05798c8bb15f156553e6739338))
+* refactor: update all dependencies to their latest versions (#178) ([1d5585b](https://github.com/peakfijn/conventions/commit/1d5585b910ec8521013b77409c4888d8030c4c36))
+* fix: prototype pollution in commitlint packages (#177) ([01b707f](https://github.com/peakfijn/conventions/commit/01b707f8c08975c61e3c4246cdbf05b0588e7ccc))
+* refactor: upgrade eslint-plugin-jsdoc to version 5.0.2 (#149) ([d68b789](https://github.com/peakfijn/conventions/commit/d68b78906c6ebe868733732a3e83dfe1a9f52044))
+* refactor: upgrade @commitlint/config-conventional to version 7.6.0 (#147) ([09ac205](https://github.com/peakfijn/conventions/commit/09ac205ec93d18d0721517ccc80af5e22031de4b))
+
+
+
 ## 1.0.1 (2019-04-25)
 
 * documentation: move badges over to shields and make them bigger ([0fa47bb](https://github.com/peakfijn/conventions/commit/0fa47bb))
