@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-peakfijn-expo",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"description": "Sharable configuration for ESLint with Expo using Peakfijn conventions",
 	"keywords": [
 		"eslint",
@@ -27,7 +27,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"eslint-config-peakfijn": "1.0.1"
+		"eslint-config-peakfijn": "2.0.0"
 	},
 	"peerDependencies": {
 		"babel-eslint": "^9.0.0",
