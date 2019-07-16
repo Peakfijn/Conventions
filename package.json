@@ -20,10 +20,10 @@
 		"release-version": "lerna version"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^7.3.2",
-		"@commitlint/travis-cli": "^7.2.1",
-		"conventional-changelog-cli": "^2.0.11",
-		"lerna": "^3.8.5",
+		"@commitlint/cli": "^8.1.0",
+		"@commitlint/travis-cli": "^8.1.0",
+		"conventional-changelog-cli": "^2.0.21",
+		"lerna": "^3.15.0",
 		"xo": "^0.24.0"
 	},
 	"commitlint": {
