@@ -1,6 +1,6 @@
 {
 	"name": "release-rules-peakfijn",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "The semantic release rules used by Peakfijn conventions",
 	"keywords": [
 		"semantic",
@@ -27,7 +27,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"commit-types-peakfijn": "2.0.0"
+		"commit-types-peakfijn": "2.1.0"
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",

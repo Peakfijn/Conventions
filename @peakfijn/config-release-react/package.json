@@ -1,6 +1,6 @@
 {
 	"name": "@peakfijn/config-release-react",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "Sharable configuration for Semantic Releases with React",
 	"keywords": [
 		"semantic",
@@ -36,8 +36,8 @@
 		"@semantic-release/commit-analyzer": "^6.2.0",
 		"@semantic-release/npm": "^5.1.13",
 		"@semantic-release/release-notes-generator": "^7.2.1",
-		"conventional-changelog-peakfijn": "2.0.0",
-		"release-rules-peakfijn": "2.0.0",
+		"conventional-changelog-peakfijn": "2.1.0",
+		"release-rules-peakfijn": "2.1.0",
 		"resolve-pkg": "^2.0.0",
 		"semantic-release": "^15.13.18",
 		"semantic-release-git-branches": "^1.2.1"
