@@ -26,29 +26,6 @@
 		"lerna": "^3.15.0",
 		"xo": "^0.24.0"
 	},
-	"commitlint": {
-		"extends": [
-			"./packages/commitlint-config-peakfijn"
-		],
-		"rules": {
-			"scope-empty": [
-				0
-			],
-			"scope-enum": [
-				2,
-				"always",
-				[
-					"changelog",
-					"commitizen",
-					"commitlint",
-					"eslint",
-					"package",
-					"semantic-release",
-					"stylelint"
-				]
-			]
-		}
-	},
 	"greenkeeper": {
 		"commitMessages": {
 			"initialBadge": "documentation: add greenkeeper badge",
