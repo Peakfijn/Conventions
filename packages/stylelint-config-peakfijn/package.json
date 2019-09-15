@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"stylelint-config-concentric-order": "^3.4.0",
-		"stylelint-config-standard": "^18.2.0"
+		"stylelint-config-standard": "^19.0.0"
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",
