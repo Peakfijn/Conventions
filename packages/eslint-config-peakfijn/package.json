@@ -29,7 +29,7 @@
 		"eslint-config-airbnb": "^18.0.0"
 	},
 	"peerDependencies": {
-		"eslint-plugin-jsdoc": "^15.5.3"
+		"eslint-plugin-jsdoc": "^15.9.5"
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",
