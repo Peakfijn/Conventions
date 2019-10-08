@@ -23,7 +23,7 @@
 		"@commitlint/cli": "^8.1.0",
 		"@commitlint/travis-cli": "^8.1.0",
 		"conventional-changelog-cli": "^2.0.23",
-		"lerna": "^3.16.4",
+		"lerna": "^3.16.5",
 		"xo": "^0.24.0"
 	},
 	"greenkeeper": {
