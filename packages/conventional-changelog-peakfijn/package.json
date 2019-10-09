@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",
-		"conventional-commits-parser": "^3.0.1",
+		"conventional-commits-parser": "^3.0.5",
 		"lodash": "^4.17.14",
 		"xo": "^0.24.0"
 	},
