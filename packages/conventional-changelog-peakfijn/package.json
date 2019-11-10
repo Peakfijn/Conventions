@@ -28,7 +28,7 @@
 	},
 	"dependencies": {
 		"commit-types-peakfijn": "2.1.0",
-		"conventional-changelog-angular": "^5.0.0",
+		"conventional-changelog-angular": "^5.0.6",
 		"q": "^1.5.1"
 	},
 	"devDependencies": {
