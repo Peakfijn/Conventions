@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^8.1.0",
 		"@commitlint/travis-cli": "^8.1.0",
-		"conventional-changelog-cli": "^2.0.23",
+		"conventional-changelog-cli": "^2.0.28",
 		"lerna": "^3.16.4",
 		"xo": "^0.24.0"
 	},
