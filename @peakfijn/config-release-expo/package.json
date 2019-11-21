@@ -32,7 +32,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"@semantic-release/changelog": "^3.0.4",
+		"@semantic-release/changelog": "^3.0.6",
 		"@semantic-release/commit-analyzer": "^6.2.0",
 		"@semantic-release/npm": "^5.1.13",
 		"@semantic-release/release-notes-generator": "^7.2.1",
