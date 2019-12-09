@@ -32,7 +32,7 @@
 	"dependencies": {
 		"eslint": "^6.0.1",
 		"eslint-config-peakfijn": "2.1.0",
-		"eslint-plugin-import": "^2.18.0",
+		"eslint-plugin-import": "^2.19.1",
 		"eslint-plugin-jsdoc": "^15.5.3",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-react": "^7.14.2",
