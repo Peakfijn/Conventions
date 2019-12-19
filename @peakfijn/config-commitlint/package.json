@@ -36,7 +36,7 @@
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",
-		"execa": "^2.0.3",
+		"execa": "^4.0.0",
 		"lodash": "^4.17.14",
 		"semver": "^6.2.0",
 		"xo": "^0.24.0"
