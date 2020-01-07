@@ -30,7 +30,7 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"commitlint": "^8.1.0",
+		"commitlint": "^8.3.4",
 		"commitlint-config-peakfijn": "2.1.0",
 		"resolve-pkg": "^2.0.0"
 	},
