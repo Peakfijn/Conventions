@@ -26,12 +26,12 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"stylelint-config-concentric-order": "^3.4.0",
+		"stylelint-config-concentric-order": "^3.5.0",
 		"stylelint-config-standard": "^18.2.0"
 	},
 	"devDependencies": {
-		"ava": "^2.2.0",
-		"lodash": "^4.17.14",
+		"ava": "^2.4.0",
+		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
 	},
 	"xo": false,

@@ -32,20 +32,20 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"@semantic-release/changelog": "^3.0.4",
-		"@semantic-release/commit-analyzer": "^6.2.0",
-		"@semantic-release/npm": "^5.1.13",
-		"@semantic-release/release-notes-generator": "^7.2.1",
-		"conventional-changelog-peakfijn": "2.1.0",
-		"release-rules-peakfijn": "2.1.0",
+		"@semantic-release/changelog": "^3.0.6",
+		"@semantic-release/commit-analyzer": "^6.3.3",
+		"@semantic-release/npm": "^5.3.5",
+		"@semantic-release/release-notes-generator": "^7.3.5",
+		"conventional-changelog-peakfijn": "^2.1.0",
+		"release-rules-peakfijn": "^2.1.0",
 		"resolve-pkg": "^2.0.0",
-		"semantic-release": "^15.13.18",
+		"semantic-release": "^15.14.0",
 		"semantic-release-git-branches": "^1.2.1"
 	},
 	"devDependencies": {
-		"ava": "^2.2.0",
-		"execa": "^2.0.3",
-		"lodash": "^4.17.14",
+		"ava": "^2.4.0",
+		"execa": "^2.1.0",
+		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
 	},
 	"xo": false,

@@ -25,12 +25,12 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^8.1.0",
-		"commit-types-peakfijn": "2.1.0"
+		"@commitlint/config-conventional": "^8.3.4",
+		"commit-types-peakfijn": "^2.1.0"
 	},
 	"devDependencies": {
-		"ava": "^2.2.0",
-		"lodash": "^4.17.14",
+		"ava": "^2.4.0",
+		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
 	},
 	"xo": false,

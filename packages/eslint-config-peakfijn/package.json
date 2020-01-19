@@ -26,14 +26,14 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"eslint-config-airbnb": "^18.0.0"
+		"eslint-config-airbnb": "^18.0.1"
 	},
 	"peerDependencies": {
 		"eslint-plugin-jsdoc": "^15.5.3"
 	},
 	"devDependencies": {
-		"ava": "^2.2.0",
-		"lodash": "^4.17.14",
+		"ava": "^2.4.0",
+		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
 	},
 	"xo": false,
