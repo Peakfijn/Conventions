@@ -30,15 +30,15 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"commitlint": "^8.1.0",
-		"commitlint-config-peakfijn": "2.1.0",
+		"commitlint": "^8.3.5",
+		"commitlint-config-peakfijn": "^2.1.0",
 		"resolve-pkg": "^2.0.0"
 	},
 	"devDependencies": {
-		"ava": "^2.2.0",
-		"execa": "^2.0.3",
-		"lodash": "^4.17.14",
-		"semver": "^6.2.0",
+		"ava": "^2.4.0",
+		"execa": "^2.1.0",
+		"lodash": "^4.17.15",
+		"semver": "^6.3.0",
 		"xo": "^0.24.0"
 	},
 	"xo": false,

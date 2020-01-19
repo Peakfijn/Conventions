@@ -32,14 +32,14 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"commitizen": "^4.0.0",
-		"cz-changelog-peakfijn": "2.1.0",
+		"commitizen": "^3.1.2",
+		"cz-changelog-peakfijn": "^2.1.0",
 		"resolve-pkg": "^2.0.0"
 	},
 	"devDependencies": {
-		"ava": "^2.2.0",
-		"execa": "^2.0.3",
-		"lodash": "^4.17.14",
+		"ava": "^2.4.0",
+		"execa": "^2.1.0",
+		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
 	},
 	"xo": false,
