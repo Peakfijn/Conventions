@@ -9,7 +9,7 @@ cache:
 before_install:
   - npm install --global npm@latest
 install:
-  - npm audit
+  - npm audit --audit-level=high
   - npm ci
 script:
   - npx commitlint-travis
