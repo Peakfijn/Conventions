@@ -38,7 +38,7 @@
 	"devDependencies": {
 		"ava": "^2.4.0",
 		"lodash": "^4.17.15",
-		"xo": "^0.24.0"
+		"xo": "^0.26.1"
 	},
 	"xo": false,
 	"gitHead": "8d0d70cc09099ea9680c0665913d330a467834c8"
