@@ -34,7 +34,7 @@
 	"dependencies": {
 		"@semantic-release/changelog": "^3.0.6",
 		"@semantic-release/commit-analyzer": "^6.3.3",
-		"@semantic-release/npm": "^5.3.5",
+		"@semantic-release/npm": "^7.0.5",
 		"@semantic-release/release-notes-generator": "^7.3.5",
 		"conventional-changelog-peakfijn": "^2.1.0",
 		"release-rules-peakfijn": "^2.1.0",
