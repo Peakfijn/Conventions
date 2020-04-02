@@ -24,7 +24,7 @@
 		"@commitlint/travis-cli": "^8.3.5",
 		"conventional-changelog-cli": "^2.0.31",
 		"lerna": "^3.20.2",
-		"xo": "^0.24.0"
+		"xo": "^0.28.2"
 	},
 	"greenkeeper": {
 		"commitMessages": {
