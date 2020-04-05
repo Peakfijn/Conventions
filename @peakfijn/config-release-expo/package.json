@@ -44,7 +44,7 @@
 		"semantic-release-git-branches": "^1.2.1"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
+		"ava": "^3.6.0",
 		"execa": "^2.1.0",
 		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
