@@ -39,7 +39,7 @@
 		"resolve-pkg": "^2.0.0"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
+		"ava": "^3.7.1",
 		"execa": "^2.1.0",
 		"lodash": "^4.17.15",
 		"semver": "^6.3.0",
