@@ -30,7 +30,7 @@
 		"commit-types-peakfijn": "^2.1.0"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
+		"ava": "^3.7.1",
 		"xo": "^0.24.0"
 	},
 	"xo": false,
