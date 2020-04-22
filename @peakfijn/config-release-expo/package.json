@@ -39,7 +39,7 @@
 		"conventional-changelog-peakfijn": "^2.1.0",
 		"release-rules-peakfijn": "^2.1.0",
 		"resolve-pkg": "^2.0.0",
-		"semantic-release": "^15.14.0",
+		"semantic-release": "^17.0.7",
 		"semantic-release-expo": "^2.2.3",
 		"semantic-release-git-branches": "^1.2.1"
 	},
