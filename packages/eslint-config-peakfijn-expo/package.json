@@ -35,7 +35,7 @@
 		"eslint-plugin-jest": "^22.2.1"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
+		"ava": "^3.8.0",
 		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
 	},
