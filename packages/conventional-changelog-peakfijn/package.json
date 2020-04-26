@@ -32,7 +32,7 @@
 		"q": "^1.5.1"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
+		"ava": "^3.8.0",
 		"conventional-commits-parser": "^3.0.8",
 		"lodash": "^4.17.15",
 		"xo": "^0.24.0"
