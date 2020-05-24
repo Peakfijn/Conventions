@@ -42,7 +42,7 @@
 		"conventional-changelog-peakfijn": "^2.1.0",
 		"release-rules-peakfijn": "^2.1.0",
 		"resolve-pkg": "^2.0.0",
-		"semantic-release": "^15.14.0"
+		"semantic-release": "^17.0.8"
 	},
 	"devDependencies": {
 		"ava": "^2.4.0",
